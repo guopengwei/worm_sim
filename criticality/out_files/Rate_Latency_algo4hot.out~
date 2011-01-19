@@ -1,0 +1,1577 @@
+Running iteration 0 with rate 0.001;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_4.config,
+rahman,
+Network size               = (4x4)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 200000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    
+
+
+============================================================
+Performance report for the period of [2000, 200000]: 
+
+Total sent packets number:         577     
+Total received packets number:     577     
+Average latency for a packet:      19.792  
+
+Power report use ebit model (J): 
+
+Link energy consumption:           2.208362e-07
+Crossbar energy consumption:       1.895393e-07
+Routing engine energy consumption: 1.865000e-10
+Arbiter energy consumption:        2.154075e-09
+Buffer read energy consumption:    7.143629e-07
+Buffer write energy consumption:   1.915115e-06
+Total network energy consumption:  3.042194e-06
+============================================================
+
+
+Running iteration 1 with rate .005;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_4.config,
+rahman,
+Network size               = (4x4)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 200000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    
+
+
+============================================================
+Performance report for the period of [2000, 200000]: 
+
+Total sent packets number:         2765    
+Total received packets number:     2765    
+Average latency for a packet:      19.7642 
+
+Power report use ebit model (J): 
+
+Link energy consumption:           1.040387e-06
+Crossbar energy consumption:       9.001846e-07
+Routing engine energy consumption: 8.864000e-10
+Arbiter energy consumption:        1.023792e-08
+Buffer read energy consumption:    3.381228e-06
+Buffer write energy consumption:   9.064636e-06
+Total network energy consumption:  1.439756e-05
+============================================================
+
+
+Running iteration 2 with rate .009;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_4.config,
+rahman,
+Network size               = (4x4)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 200000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    
+
+
+============================================================
+Performance report for the period of [2000, 200000]: 
+
+Total sent packets number:         4978    
+Total received packets number:     4977    
+Average latency for a packet:      19.966  
+
+Power report use ebit model (J): 
+
+Link energy consumption:           1.896863e-06
+Crossbar energy consumption:       1.630805e-06
+Routing engine energy consumption: 1.604300e-09
+Arbiter energy consumption:        1.852966e-08
+Buffer read energy consumption:    6.143048e-06
+Buffer write energy consumption:   1.646890e-05
+Total network energy consumption:  2.615975e-05
+============================================================
+
+
+Running iteration 3 with rate .013;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_4.config,
+rahman,
+Network size               = (4x4)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 200000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    
+
+
+============================================================
+Performance report for the period of [2000, 200000]: 
+
+Total sent packets number:         7276    
+Total received packets number:     7276    
+Average latency for a packet:      20.0312 
+
+Power report use ebit model (J): 
+
+Link energy consumption:           2.760668e-06
+Crossbar energy consumption:       2.372913e-06
+Routing engine energy consumption: 2.334300e-09
+Arbiter energy consumption:        2.696117e-08
+Buffer read energy consumption:    8.951501e-06
+Buffer write energy consumption:   2.399782e-05
+Total network energy consumption:  3.811220e-05
+============================================================
+
+
+Running iteration 4 with rate .017;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_4.config,
+rahman,
+Network size               = (4x4)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 200000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    
+
+
+============================================================
+Performance report for the period of [2000, 200000]: 
+
+Total sent packets number:         9585    
+Total received packets number:     9583    
+Average latency for a packet:      20.1546 
+
+Power report use ebit model (J): 
+
+Link energy consumption:           3.646311e-06
+Crossbar energy consumption:       3.138933e-06
+Routing engine energy consumption: 3.085900e-09
+Arbiter energy consumption:        3.564215e-08
+Buffer read energy consumption:    1.181456e-05
+Buffer write energy consumption:   3.167368e-05
+Total network energy consumption:  5.031222e-05
+============================================================
+
+
+Running iteration 5 with rate .021;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_4.config,
+rahman,
+Network size               = (4x4)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 200000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    
+
+
+============================================================
+Performance report for the period of [2000, 200000]: 
+
+Total sent packets number:         11817   
+Total received packets number:     11816   
+Average latency for a packet:      20.2831 
+
+Power report use ebit model (J): 
+
+Link energy consumption:           4.475057e-06
+Crossbar energy consumption:       3.858979e-06
+Routing engine energy consumption: 3.794300e-09
+Arbiter energy consumption:        4.382417e-08
+Buffer read energy consumption:    1.451799e-05
+Buffer write energy consumption:   3.892104e-05
+Total network energy consumption:  6.182069e-05
+============================================================
+
+
+Running iteration 6 with rate .025;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_4.config,
+rahman,
+Network size               = (4x4)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 200000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    
+
+
+============================================================
+Performance report for the period of [2000, 200000]: 
+
+Total sent packets number:         14090   
+Total received packets number:     14090   
+Average latency for a packet:      20.4419 
+
+Power report use ebit model (J): 
+
+Link energy consumption:           5.354235e-06
+Crossbar energy consumption:       4.605617e-06
+Routing engine energy consumption: 4.528800e-09
+Arbiter energy consumption:        5.230764e-08
+Buffer read energy consumption:    1.735388e-05
+Buffer write energy consumption:   4.652352e-05
+Total network energy consumption:  7.389409e-05
+============================================================
+
+
+Running iteration 7 with rate .029;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_4.config,
+rahman,
+Network size               = (4x4)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 200000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    
+
+
+============================================================
+Performance report for the period of [2000, 200000]: 
+
+Total sent packets number:         16363   
+Total received packets number:     16359   
+Average latency for a packet:      20.5416 
+
+Power report use ebit model (J): 
+
+Link energy consumption:           6.214907e-06
+Crossbar energy consumption:       5.335645e-06
+Routing engine energy consumption: 5.244800e-09
+Arbiter energy consumption:        6.057744e-08
+Buffer read energy consumption:    2.014483e-05
+Buffer write energy consumption:   5.400805e-05
+Total network energy consumption:  8.576926e-05
+============================================================
+
+
+Running iteration 8 with rate .033;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_4.config,
+rahman,
+Network size               = (4x4)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 200000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    
+
+
+============================================================
+Performance report for the period of [2000, 200000]: 
+
+Total sent packets number:         18519   
+Total received packets number:     18519   
+Average latency for a packet:      20.6706 
+
+Power report use ebit model (J): 
+
+Link energy consumption:           7.019055e-06
+Crossbar energy consumption:       6.049936e-06
+Routing engine energy consumption: 5.948600e-09
+Arbiter energy consumption:        6.870748e-08
+Buffer read energy consumption:    2.276608e-05
+Buffer write energy consumption:   6.103274e-05
+Total network energy consumption:  9.694246e-05
+============================================================
+
+
+Running iteration 9 with rate .037;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_4.config,
+rahman,
+Network size               = (4x4)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 200000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    
+
+
+============================================================
+Performance report for the period of [2000, 200000]: 
+
+Total sent packets number:         20841   
+Total received packets number:     20842   
+Average latency for a packet:      20.7989 
+
+Power report use ebit model (J): 
+
+Link energy consumption:           7.891480e-06
+Crossbar energy consumption:       6.800485e-06
+Routing engine energy consumption: 6.687400e-09
+Arbiter energy consumption:        7.723947e-08
+Buffer read energy consumption:    2.560258e-05
+Buffer write energy consumption:   6.863757e-05
+Total network energy consumption:  1.090160e-04
+============================================================
+
+
+Running iteration 10 with rate .041;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_4.config,
+rahman,
+Network size               = (4x4)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 200000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    
+
+
+============================================================
+Performance report for the period of [2000, 200000]: 
+
+Total sent packets number:         23019   
+Total received packets number:     23020   
+Average latency for a packet:      21.0252 
+
+Power report use ebit model (J): 
+
+Link energy consumption:           8.756836e-06
+Crossbar energy consumption:       7.538205e-06
+Routing engine energy consumption: 7.413400e-09
+Arbiter energy consumption:        8.562477e-08
+Buffer read energy consumption:    2.837406e-05
+Buffer write energy consumption:   7.606666e-05
+Total network energy consumption:  1.208288e-04
+============================================================
+
+
+Running iteration 11 with rate .045;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_4.config,
+rahman,
+Network size               = (4x4)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 200000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    
+
+
+============================================================
+Performance report for the period of [2000, 200000]: 
+
+Total sent packets number:         25330   
+Total received packets number:     25330   
+Average latency for a packet:      21.0998 
+
+Power report use ebit model (J): 
+
+Link energy consumption:           9.607479e-06
+Crossbar energy consumption:       8.283352e-06
+Routing engine energy consumption: 8.148700e-09
+Arbiter energy consumption:        9.411748e-08
+Buffer read energy consumption:    3.115548e-05
+Buffer write energy consumption:   8.352311e-05
+Total network energy consumption:  1.326717e-04
+============================================================
+
+
+Running iteration 12 with rate .049;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_4.config,
+rahman,
+Network size               = (4x4)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 200000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    
+
+
+============================================================
+Performance report for the period of [2000, 200000]: 
+
+Total sent packets number:         27640   
+Total received packets number:     27639   
+Average latency for a packet:      21.2528 
+
+Power report use ebit model (J): 
+
+Link energy consumption:           1.047079e-05
+Crossbar energy consumption:       9.031044e-06
+Routing engine energy consumption: 8.879200e-09
+Arbiter energy consumption:        1.025548e-07
+Buffer read energy consumption:    3.396610e-05
+Buffer write energy consumption:   9.105927e-05
+Total network energy consumption:  1.446386e-04
+============================================================
+
+
+Running iteration 13 with rate .053;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_4.config,
+rahman,
+Network size               = (4x4)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 200000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    
+
+
+============================================================
+Performance report for the period of [2000, 200000]: 
+
+Total sent packets number:         29856   
+Total received packets number:     29855   
+Average latency for a packet:      21.4438 
+
+Power report use ebit model (J): 
+
+Link energy consumption:           1.131135e-05
+Crossbar energy consumption:       9.754361e-06
+Routing engine energy consumption: 9.596000e-09
+Arbiter energy consumption:        1.108338e-07
+Buffer read energy consumption:    3.669183e-05
+Buffer write energy consumption:   9.836642e-05
+Total network energy consumption:  1.562444e-04
+============================================================
+
+
+Running iteration 14 with rate .057;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_4.config,
+rahman,
+Network size               = (4x4)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 200000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    
+
+
+============================================================
+Performance report for the period of [2000, 200000]: 
+
+Total sent packets number:         32107   
+Total received packets number:     32108   
+Average latency for a packet:      21.7029 
+
+Power report use ebit model (J): 
+
+Link energy consumption:           1.222202e-05
+Crossbar energy consumption:       1.052774e-05
+Routing engine energy consumption: 1.035050e-08
+Arbiter energy consumption:        1.195494e-07
+Buffer read energy consumption:    3.959469e-05
+Buffer write energy consumption:   1.061477e-04
+Total network energy consumption:  1.686221e-04
+============================================================
+
+
+Running iteration 15 with rate .061;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_4.config,
+rahman,
+Network size               = (4x4)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 200000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    
+
+
+============================================================
+Performance report for the period of [2000, 200000]: 
+
+Total sent packets number:         34388   
+Total received packets number:     34390   
+Average latency for a packet:      21.8256 
+
+Power report use ebit model (J): 
+
+Link energy consumption:           1.305103e-05
+Crossbar energy consumption:       1.124687e-05
+Routing engine energy consumption: 1.106490e-08
+Arbiter energy consumption:        1.278007e-07
+Buffer read energy consumption:    4.231509e-05
+Buffer write energy consumption:   1.134415e-04
+Total network energy consumption:  1.801933e-04
+============================================================
+
+
+Running iteration 16 with rate .065;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_4.config,
+rahman,
+Network size               = (4x4)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 200000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    
+
+
+============================================================
+Performance report for the period of [2000, 200000]: 
+
+Total sent packets number:         36660   
+Total received packets number:     36659   
+Average latency for a packet:      22.0981 
+
+Power report use ebit model (J): 
+
+Link energy consumption:           1.398403e-05
+Crossbar energy consumption:       1.201762e-05
+Routing engine energy consumption: 1.181810e-08
+Arbiter energy consumption:        1.364991e-07
+Buffer read energy consumption:    4.527668e-05
+Buffer write energy consumption:   1.213810e-04
+Total network energy consumption:  1.928076e-04
+============================================================
+
+
+Running iteration 17 with rate .069;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_4.config,
+rahman,
+Network size               = (4x4)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 200000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    
+
+
+============================================================
+Performance report for the period of [2000, 200000]: 
+
+Total sent packets number:         38872   
+Total received packets number:     38869   
+Average latency for a packet:      22.2757 
+
+Power report use ebit model (J): 
+
+Link energy consumption:           1.475071e-05
+Crossbar energy consumption:       1.271547e-05
+Routing engine energy consumption: 1.250880e-08
+Arbiter energy consumption:        1.444766e-07
+Buffer read energy consumption:    4.782649e-05
+Buffer write energy consumption:   1.282181e-04
+Total network energy consumption:  2.036678e-04
+============================================================
+
+
+Running iteration 18 with rate .073;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_4.config,
+rahman,
+Network size               = (4x4)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 200000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    
+
+
+============================================================
+Performance report for the period of [2000, 200000]: 
+
+Total sent packets number:         41209   
+Total received packets number:     41203   
+Average latency for a packet:      22.4787 
+
+Power report use ebit model (J): 
+
+Link energy consumption:           1.564471e-05
+Crossbar energy consumption:       1.346113e-05
+Routing engine energy consumption: 1.324590e-08
+Arbiter energy consumption:        1.529901e-07
+Buffer read energy consumption:    5.071949e-05
+Buffer write energy consumption:   1.359733e-04
+Total network energy consumption:  2.159649e-04
+============================================================
+
+
+Running iteration 19 with rate .113;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_4.config,
+rahman,
+Network size               = (4x4)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 200000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    
+
+
+============================================================
+Performance report for the period of [2000, 200000]: 
+
+Total sent packets number:         64119   
+Total received packets number:     64114   
+Average latency for a packet:      25.9516 
+
+Power report use ebit model (J): 
+
+Link energy consumption:           2.442281e-05
+Crossbar energy consumption:       2.102600e-05
+Routing engine energy consumption: 2.068130e-08
+Arbiter energy consumption:        2.388690e-07
+Buffer read energy consumption:    7.910586e-05
+Buffer write energy consumption:   2.120759e-04
+Total network energy consumption:  3.368901e-04
+============================================================
+
+
+Running iteration 20 with rate .153;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_4.config,
+rahman,
+Network size               = (4x4)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 200000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    
+
+
+============================================================
+Performance report for the period of [2000, 200000]: 
+
+Total sent packets number:         86108   
+Total received packets number:     86097   
+Average latency for a packet:      38.2663 
+
+Power report use ebit model (J): 
+
+Link energy consumption:           3.268407e-05
+Crossbar energy consumption:       2.818156e-05
+Routing engine energy consumption: 2.771820e-08
+Arbiter energy consumption:        3.201475e-07
+Buffer read energy consumption:    1.059639e-04
+Buffer write energy consumption:   2.840748e-04
+Total network energy consumption:  4.512522e-04
+============================================================
+
+
+Running iteration 21 with rate .193;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_4.config,
+rahman,
+Network size               = (4x4)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 200000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    
+
+
+============================================================
+Performance report for the period of [2000, 200000]: 
+
+Total sent packets number:         108785  
+Total received packets number:     103927  
+Average latency for a packet:      4078.44 
+
+Power report use ebit model (J): 
+
+Link energy consumption:           3.966235e-05
+Crossbar energy consumption:       3.410448e-05
+Routing engine energy consumption: 3.351470e-08
+Arbiter energy consumption:        3.870971e-07
+Buffer read energy consumption:    1.284004e-04
+Buffer write energy consumption:   3.442275e-04
+Total network energy consumption:  5.468153e-04
+============================================================
+
+
+Running iteration 22 with rate .233;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_4.config,
+rahman,
+Network size               = (4x4)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 200000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    
+
+
+============================================================
+Performance report for the period of [2000, 200000]: 
+
+Total sent packets number:         131388  
+Total received packets number:     106379  
+Average latency for a packet:      16820.7 
+
+Power report use ebit model (J): 
+
+Link energy consumption:           4.066667e-05
+Crossbar energy consumption:       3.490511e-05
+Routing engine energy consumption: 3.423190e-08
+Arbiter energy consumption:        3.953796e-07
+Buffer read energy consumption:    1.315910e-04
+Buffer write energy consumption:   3.527790e-04
+Total network energy consumption:  5.603714e-04
+============================================================
+
+
+Running iteration 23 with rate .273;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_4.config,
+rahman,
+Network size               = (4x4)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 200000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    
+
+
+============================================================
+Performance report for the period of [2000, 200000]: 
+
+Total sent packets number:         154066  
+Total received packets number:     107883  
+Average latency for a packet:      27367.4 
+
+Power report use ebit model (J): 
+
+Link energy consumption:           4.122438e-05
+Crossbar energy consumption:       3.537651e-05
+Routing engine energy consumption: 3.467850e-08
+Arbiter energy consumption:        4.005378e-07
+Buffer read energy consumption:    1.334121e-04
+Buffer write energy consumption:   3.576612e-04
+Total network energy consumption:  5.681094e-04
+============================================================
+
+
+Running iteration 24 with rate .313;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_4.config,
+rahman,
+Network size               = (4x4)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 200000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    
+
+
+============================================================
+Performance report for the period of [2000, 200000]: 
+
+Total sent packets number:         176401  
+Total received packets number:     108683  
+Average latency for a packet:      35885.7 
+
+Power report use ebit model (J): 
+
+Link energy consumption:           4.160286e-05
+Crossbar energy consumption:       3.567346e-05
+Routing engine energy consumption: 3.496180e-08
+Arbiter energy consumption:        4.038099e-07
+Buffer read energy consumption:    1.345716e-04
+Buffer write energy consumption:   3.607716e-04
+Total network energy consumption:  5.730583e-04
+============================================================
+
+
+Running iteration 25 with rate .353;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_4.config,
+rahman,
+Network size               = (4x4)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 200000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    
+
+
+============================================================
+Performance report for the period of [2000, 200000]: 
+
+Total sent packets number:         199130  
+Total received packets number:     110212  
+Average latency for a packet:      42167   
+
+Power report use ebit model (J): 
+
+Link energy consumption:           4.224201e-05
+Crossbar energy consumption:       3.619200e-05
+Routing engine energy consumption: 3.547090e-08
+Arbiter energy consumption:        4.096901e-07
+Buffer read energy consumption:    1.365915e-04
+Buffer write energy consumption:   3.661861e-04
+Total network energy consumption:  5.816567e-04
+============================================================
+
+
+Running iteration 26 with rate .393;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_4.config,
+rahman,
+Network size               = (4x4)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 200000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    
+
+
+============================================================
+Performance report for the period of [2000, 200000]: 
+
+Total sent packets number:         221630  
+Total received packets number:     111289  
+Average latency for a packet:      46549.5 
+
+Power report use ebit model (J): 
+
+Link energy consumption:           4.275196e-05
+Crossbar energy consumption:       3.657845e-05
+Routing engine energy consumption: 3.583440e-08
+Arbiter energy consumption:        4.138885e-07
+Buffer read energy consumption:    1.381554e-04
+Buffer write energy consumption:   3.703780e-04
+Total network energy consumption:  5.883135e-04
+============================================================
+
+
+Running iteration 27 with rate .433;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_4.config,
+rahman,
+Network size               = (4x4)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 200000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    
+
+
+============================================================
+Performance report for the period of [2000, 200000]: 
+
+Total sent packets number:         244122  
+Total received packets number:     111248  
+Average latency for a packet:      51073.3 
+
+Power report use ebit model (J): 
+
+Link energy consumption:           4.262063e-05
+Crossbar energy consumption:       3.648936e-05
+Routing engine energy consumption: 3.574820e-08
+Arbiter energy consumption:        4.128917e-07
+Buffer read energy consumption:    1.378321e-04
+Buffer write energy consumption:   3.695106e-04
+Total network energy consumption:  5.869014e-04
+============================================================
+
+
+Running iteration 28 with rate .473;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_4.config,
+rahman,
+Network size               = (4x4)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 200000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    
+
+
+============================================================
+Performance report for the period of [2000, 200000]: 
+
+Total sent packets number:         266471  
+Total received packets number:     111317  
+Average latency for a packet:      55369.9 
+
+Power report use ebit model (J): 
+
+Link energy consumption:           4.269509e-05
+Crossbar energy consumption:       3.654541e-05
+Routing engine energy consumption: 3.579980e-08
+Arbiter energy consumption:        4.134888e-07
+Buffer read energy consumption:    1.380305e-04
+Buffer write energy consumption:   3.700431e-04
+Total network energy consumption:  5.877634e-04
+============================================================
+
+
+Running iteration 29 with rate .513;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_4.config,
+rahman,
+Network size               = (4x4)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 200000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    
+
+
+============================================================
+Performance report for the period of [2000, 200000]: 
+
+Total sent packets number:         288991  
+Total received packets number:     111240  
+Average latency for a packet:      58861.7 
+
+Power report use ebit model (J): 
+
+Link energy consumption:           4.268865e-05
+Crossbar energy consumption:       3.653068e-05
+Routing engine energy consumption: 3.578760e-08
+Arbiter energy consumption:        4.133479e-07
+Buffer read energy consumption:    1.379893e-04
+Buffer write energy consumption:   3.699321e-04
+Total network energy consumption:  5.875898e-04
+============================================================
+
+
+Running iteration 30 with rate .553;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_4.config,
+rahman,
+Network size               = (4x4)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 200000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    
+
+
+============================================================
+Performance report for the period of [2000, 200000]: 
+
+Total sent packets number:         311676  
+Total received packets number:     111121  
+Average latency for a packet:      61581.6 
+
+Power report use ebit model (J): 
+
+Link energy consumption:           4.261089e-05
+Crossbar energy consumption:       3.647435e-05
+Routing engine energy consumption: 3.573160e-08
+Arbiter energy consumption:        4.127011e-07
+Buffer read energy consumption:    1.377680e-04
+Buffer write energy consumption:   3.693387e-04
+Total network energy consumption:  5.866404e-04
+============================================================
+
+
+Running iteration 31 with rate .593;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_4.config,
+rahman,
+Network size               = (4x4)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 200000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    
+
+
+============================================================
+Performance report for the period of [2000, 200000]: 
+
+Total sent packets number:         334153  
+Total received packets number:     110946  
+Average latency for a packet:      64085.1 
+
+Power report use ebit model (J): 
+
+Link energy consumption:           4.250204e-05
+Crossbar energy consumption:       3.640784e-05
+Routing engine energy consumption: 3.566050e-08
+Arbiter energy consumption:        4.118788e-07
+Buffer read energy consumption:    1.374510e-04
+Buffer write energy consumption:   3.684866e-04
+Total network energy consumption:  5.852950e-04
+============================================================
+
+
+Running iteration 32 with rate .633;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_4.config,
+rahman,
+Network size               = (4x4)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 200000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    
+
+
+============================================================
+Performance report for the period of [2000, 200000]: 
+
+Total sent packets number:         356709  
+Total received packets number:     110802  
+Average latency for a packet:      66881.6 
+
+Power report use ebit model (J): 
+
+Link energy consumption:           4.259405e-05
+Crossbar energy consumption:       3.642427e-05
+Routing engine energy consumption: 3.567550e-08
+Arbiter energy consumption:        4.120532e-07
+Buffer read energy consumption:    1.376179e-04
+Buffer write energy consumption:   3.689356e-04
+Total network energy consumption:  5.860195e-04
+============================================================
+
+
+Running iteration 33 with rate .673;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_4.config,
+rahman,
+Network size               = (4x4)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 200000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    
+
+
+============================================================
+Performance report for the period of [2000, 200000]: 
+
+Total sent packets number:         379116  
+Total received packets number:     111285  
+Average latency for a packet:      68573.3 
+
+Power report use ebit model (J): 
+
+Link energy consumption:           4.273589e-05
+Crossbar energy consumption:       3.650940e-05
+Routing engine energy consumption: 3.575650e-08
+Arbiter energy consumption:        4.129876e-07
+Buffer read energy consumption:    1.381161e-04
+Buffer write energy consumption:   3.702693e-04
+Total network energy consumption:  5.880794e-04
+============================================================
+
+
+Running iteration 34 with rate .713;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_4.config,
+rahman,
+Network size               = (4x4)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 200000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    
+
+
+============================================================
+Performance report for the period of [2000, 200000]: 
+
+Total sent packets number:         401825  
+Total received packets number:     110873  
+Average latency for a packet:      70371   
+
+Power report use ebit model (J): 
+
+Link energy consumption:           4.257629e-05
+Crossbar energy consumption:       3.640505e-05
+Routing engine energy consumption: 3.565340e-08
+Arbiter energy consumption:        4.117991e-07
+Buffer read energy consumption:    1.376008e-04
+Buffer write energy consumption:   3.688904e-04
+Total network energy consumption:  5.859201e-04
+============================================================
+
+
+Running iteration 35 with rate .753;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_4.config,
+rahman,
+Network size               = (4x4)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 200000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    
+
+
+============================================================
+Performance report for the period of [2000, 200000]: 
+
+Total sent packets number:         424387  
+Total received packets number:     111269  
+Average latency for a packet:      72477.5 
+
+Power report use ebit model (J): 
+
+Link energy consumption:           4.266520e-05
+Crossbar energy consumption:       3.655736e-05
+Routing engine energy consumption: 3.581170e-08
+Arbiter energy consumption:        4.136263e-07
+Buffer read energy consumption:    1.379446e-04
+Buffer write energy consumption:   3.698110e-04
+Total network energy consumption:  5.874276e-04
+============================================================
+
+
+Running iteration 36 with rate .793;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_4.config,
+rahman,
+Network size               = (4x4)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 200000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    
+
+
+============================================================
+Performance report for the period of [2000, 200000]: 
+
+Total sent packets number:         446778  
+Total received packets number:     111567  
+Average latency for a packet:      73745.1 
+
+Power report use ebit model (J): 
+
+Link energy consumption:           4.277308e-05
+Crossbar energy consumption:       3.659499e-05
+Routing engine energy consumption: 3.584940e-08
+Arbiter energy consumption:        4.140629e-07
+Buffer read energy consumption:    1.382982e-04
+Buffer write energy consumption:   3.707581e-04
+Total network energy consumption:  5.888743e-04
+============================================================
+
+
+Running iteration 37 with rate .833;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_4.config,
+rahman,
+Network size               = (4x4)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 200000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    
+
+
+============================================================
+Performance report for the period of [2000, 200000]: 
+
+Total sent packets number:         469339  
+Total received packets number:     111211  
+Average latency for a packet:      75098.8 
+
+Power report use ebit model (J): 
+
+Link energy consumption:           4.262328e-05
+Crossbar energy consumption:       3.647540e-05
+Routing engine energy consumption: 3.572910e-08
+Arbiter energy consumption:        4.126734e-07
+Buffer read energy consumption:    1.378263e-04
+Buffer write energy consumption:   3.694967e-04
+Total network energy consumption:  5.868701e-04
+============================================================
+
+
+Running iteration 38 with rate .873;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_4.config,
+rahman,
+Network size               = (4x4)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 200000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    
+
+
+============================================================
+Performance report for the period of [2000, 200000]: 
+
+Total sent packets number:         491911  
+Total received packets number:     111320  
+Average latency for a packet:      76264   
+
+Power report use ebit model (J): 
+
+Link energy consumption:           4.270730e-05
+Crossbar energy consumption:       3.654807e-05
+Routing engine energy consumption: 3.580350e-08
+Arbiter energy consumption:        4.135339e-07
+Buffer read energy consumption:    1.380604e-04
+Buffer write energy consumption:   3.701227e-04
+Total network energy consumption:  5.878878e-04
+============================================================
+
+
+Running iteration 39 with rate .913;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_4.config,
+rahman,
+Network size               = (4x4)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 200000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    
+
+
+============================================================
+Performance report for the period of [2000, 200000]: 
+
+Total sent packets number:         514181  
+Total received packets number:     111396  
+Average latency for a packet:      77363.7 
+
+Power report use ebit model (J): 
+
+Link energy consumption:           4.264833e-05
+Crossbar energy consumption:       3.651101e-05
+Routing engine energy consumption: 3.576550e-08
+Arbiter energy consumption:        4.130927e-07
+Buffer read energy consumption:    1.379466e-04
+Buffer write energy consumption:   3.698141e-04
+Total network energy consumption:  5.873689e-04
+============================================================
+
+
+Running iteration 40 with rate .953;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_4.config,
+rahman,
+Network size               = (4x4)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 200000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    
+
+
+============================================================
+Performance report for the period of [2000, 200000]: 
+
+Total sent packets number:         536696  
+Total received packets number:     111444  
+Average latency for a packet:      78465.4 
+
+Power report use ebit model (J): 
+
+Link energy consumption:           4.269739e-05
+Crossbar energy consumption:       3.656492e-05
+Routing engine energy consumption: 3.582520e-08
+Arbiter energy consumption:        4.137834e-07
+Buffer read energy consumption:    1.380788e-04
+Buffer write energy consumption:   3.701716e-04
+Total network energy consumption:  5.879623e-04
+============================================================
+
+
+Running iteration 41 with rate .993;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_4.config,
+rahman,
+Network size               = (4x4)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 200000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    
+
+
+============================================================
+Performance report for the period of [2000, 200000]: 
+
+Total sent packets number:         559211  
+Total received packets number:     111827  
+Average latency for a packet:      79435.7 
+
+Power report use ebit model (J): 
+
+Link energy consumption:           4.295377e-05
+Crossbar energy consumption:       3.674266e-05
+Routing engine energy consumption: 3.599320e-08
+Arbiter energy consumption:        4.157261e-07
+Buffer read energy consumption:    1.388110e-04
+Buffer write energy consumption:   3.721356e-04
+Total network energy consumption:  5.910948e-04
+============================================================
+
+
+Running iteration 42 with rate 1.033;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_4.config,
+rahman,
+Network size               = (4x4)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 200000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    
+
+
+============================================================
+Performance report for the period of [2000, 200000]: 
+
+Total sent packets number:         581475  
+Total received packets number:     111919  
+Average latency for a packet:      80155.5 
+
+Power report use ebit model (J): 
+
+Link energy consumption:           4.293681e-05
+Crossbar energy consumption:       3.672718e-05
+Routing engine energy consumption: 3.598030e-08
+Arbiter energy consumption:        4.155759e-07
+Buffer read energy consumption:    1.388023e-04
+Buffer write energy consumption:   3.721123e-04
+Total network energy consumption:  5.910301e-04
+============================================================
+
+
+Running iteration 43 with rate 1.073;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_4.config,
+rahman,
+Network size               = (4x4)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 200000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    
+
+
+============================================================
+Performance report for the period of [2000, 200000]: 
+
+Total sent packets number:         603897  
+Total received packets number:     111017  
+Average latency for a packet:      81069.9 
+
+Power report use ebit model (J): 
+
+Link energy consumption:           4.257609e-05
+Crossbar energy consumption:       3.646044e-05
+Routing engine energy consumption: 3.571800e-08
+Arbiter energy consumption:        4.125464e-07
+Buffer read energy consumption:    1.376500e-04
+Buffer write energy consumption:   3.690216e-04
+Total network energy consumption:  5.861564e-04
+============================================================
+
+
+Running iteration 44 with rate 1.113;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_4.config,
+rahman,
+Network size               = (4x4)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 200000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    
+
+
+============================================================
+Performance report for the period of [2000, 200000]: 
+
+Total sent packets number:         626635  
+Total received packets number:     111734  
+Average latency for a packet:      81601   
+
+Power report use ebit model (J): 
+
+Link energy consumption:           4.283845e-05
+Crossbar energy consumption:       3.664685e-05
+Routing engine energy consumption: 3.590160e-08
+Arbiter energy consumption:        4.146635e-07
+Buffer read energy consumption:    1.385091e-04
+Buffer write energy consumption:   3.713257e-04
+Total network energy consumption:  5.897707e-04
+============================================================
+
+
+Running iteration 45 with rate 1.153;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_4.config,
+rahman,
+Network size               = (4x4)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 200000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    
+
+
+============================================================
+Performance report for the period of [2000, 200000]: 
+
+Total sent packets number:         649149  
+Total received packets number:     111830  
+Average latency for a packet:      82239   
+
+Power report use ebit model (J): 
+
+Link energy consumption:           4.306403e-05
+Crossbar energy consumption:       3.677567e-05
+Routing engine energy consumption: 3.602690e-08
+Arbiter energy consumption:        4.161130e-07
+Buffer read energy consumption:    1.390717e-04
+Buffer write energy consumption:   3.728348e-04
+Total network energy consumption:  5.921983e-04
+============================================================
+
+
+Running iteration 46 with rate 1.193;
+Running iteration 47 with rate 1.233;
+Running iteration 48 with rate 1.273;
+Running iteration 49 with rate 1.313;
+Running iteration 50 with rate 1.353;
+Running iteration 51 with rate 1.393;
+Running iteration 52 with rate 1.433;
+Running iteration 53 with rate 1.473;
+Running iteration 54 with rate 1.513;
+Running iteration 55 with rate 1.553;
+Running iteration 56 with rate 1.593;
+Running iteration 57 with rate 1.633;
+Running iteration 58 with rate 1.673;

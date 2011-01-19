@@ -1,0 +1,595 @@
+Running iteration 0 with rate 0.001;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_8.config,
+../config_files/free_links_8x8.config,
+Network size               = (8x8)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 100000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    	LR link adaptive routing   = 0       
+
+
+============================================================
+Performance report for the period of [2000, 100000]: 
+
+Total sent packets number:         778     
+Total received packets number:     778     
+Average latency for a packet:      30.2532 
+
+Average number of packets at t:    0.753213
+Power report use ebit model (J): 
+
+Link energy consumption:           6.048928e-07
+Crossbar energy consumption:       4.192658e-07
+Routing engine energy consumption: 4.428000e-10
+Arbiter energy consumption:        5.114340e-09
+Buffer read energy consumption:    1.685545e-06
+Buffer write energy consumption:   4.518729e-06
+Total network energy consumption:  7.233990e-06
+============================================================
+
+
+Running iteration 1 with rate .011;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_8.config,
+../config_files/free_links_8x8.config,
+Network size               = (8x8)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 100000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    	LR link adaptive routing   = 0       
+
+
+============================================================
+Performance report for the period of [2000, 100000]: 
+
+Total sent packets number:         8222    
+Total received packets number:     8222    
+Average latency for a packet:      30.5401 
+
+Average number of packets at t:    3.01119 
+Power report use ebit model (J): 
+
+Link energy consumption:           6.416749e-06
+Crossbar energy consumption:       4.411570e-06
+Routing engine energy consumption: 4.650800e-09
+Arbiter energy consumption:        5.371674e-08
+Buffer read energy consumption:    1.786989e-05
+Buffer write energy consumption:   4.790686e-05
+Total network energy consumption:  7.666343e-05
+============================================================
+
+
+Running iteration 2 with rate .021;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_8.config,
+../config_files/free_links_8x8.config,
+Network size               = (8x8)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 100000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    	LR link adaptive routing   = 0       
+
+
+============================================================
+Performance report for the period of [2000, 100000]: 
+
+Total sent packets number:         15551   
+Total received packets number:     15554   
+Average latency for a packet:      30.6964 
+
+Average number of packets at t:    5.27626 
+Power report use ebit model (J): 
+
+Link energy consumption:           1.208182e-05
+Crossbar energy consumption:       8.277688e-06
+Routing engine energy consumption: 8.712200e-09
+Arbiter energy consumption:        1.006271e-07
+Buffer read energy consumption:    3.367096e-05
+Buffer write energy consumption:   9.026406e-05
+Total network energy consumption:  1.444039e-04
+============================================================
+
+
+Running iteration 3 with rate .031;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_8.config,
+../config_files/free_links_8x8.config,
+Network size               = (8x8)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 100000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    	LR link adaptive routing   = 0       
+
+
+============================================================
+Performance report for the period of [2000, 100000]: 
+
+Total sent packets number:         23289   
+Total received packets number:     23286   
+Average latency for a packet:      31.1178 
+
+Average number of packets at t:    7.77801 
+Power report use ebit model (J): 
+
+Link energy consumption:           1.808612e-05
+Crossbar energy consumption:       1.240359e-05
+Routing engine energy consumption: 1.306250e-08
+Arbiter energy consumption:        1.508742e-07
+Buffer read energy consumption:    5.040611e-05
+Buffer write energy consumption:   1.351334e-04
+Total network energy consumption:  2.161931e-04
+============================================================
+
+
+Running iteration 4 with rate .041;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_8.config,
+../config_files/free_links_8x8.config,
+Network size               = (8x8)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 100000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    	LR link adaptive routing   = 0       
+
+
+============================================================
+Performance report for the period of [2000, 100000]: 
+
+Total sent packets number:         30779   
+Total received packets number:     30776   
+Average latency for a packet:      31.5173 
+
+Average number of packets at t:    10.2607 
+Power report use ebit model (J): 
+
+Link energy consumption:           2.387324e-05
+Crossbar energy consumption:       1.637985e-05
+Routing engine energy consumption: 1.724540e-08
+Arbiter energy consumption:        1.991855e-07
+Buffer read energy consumption:    6.654760e-05
+Buffer write energy consumption:   1.784066e-04
+Total network energy consumption:  2.854237e-04
+============================================================
+
+
+Running iteration 5 with rate .051;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_8.config,
+../config_files/free_links_8x8.config,
+Network size               = (8x8)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 100000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    	LR link adaptive routing   = 0       
+
+
+============================================================
+Performance report for the period of [2000, 100000]: 
+
+Total sent packets number:         38232   
+Total received packets number:     38234   
+Average latency for a packet:      32.0818 
+
+Average number of packets at t:    12.8287 
+Power report use ebit model (J): 
+
+Link energy consumption:           2.969394e-05
+Crossbar energy consumption:       2.038503e-05
+Routing engine energy consumption: 2.145990e-08
+Arbiter energy consumption:        2.478665e-07
+Buffer read energy consumption:    8.275749e-05
+Buffer write energy consumption:   2.218609e-04
+Total network energy consumption:  3.549667e-04
+============================================================
+
+
+Running iteration 6 with rate .061;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_8.config,
+../config_files/free_links_8x8.config,
+Network size               = (8x8)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 100000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    	LR link adaptive routing   = 0       
+
+
+============================================================
+Performance report for the period of [2000, 100000]: 
+
+Total sent packets number:         45451   
+Total received packets number:     45448   
+Average latency for a packet:      32.7447 
+
+Average number of packets at t:    15.4541 
+Power report use ebit model (J): 
+
+Link energy consumption:           3.544709e-05
+Crossbar energy consumption:       2.428653e-05
+Routing engine energy consumption: 2.556610e-08
+Arbiter energy consumption:        2.952919e-07
+Buffer read energy consumption:    9.872481e-05
+Buffer write energy consumption:   2.646716e-04
+Total network energy consumption:  4.234509e-04
+============================================================
+
+
+Running iteration 7 with rate .071;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_8.config,
+../config_files/free_links_8x8.config,
+Network size               = (8x8)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 100000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    	LR link adaptive routing   = 0       
+
+
+============================================================
+Performance report for the period of [2000, 100000]: 
+
+Total sent packets number:         53161   
+Total received packets number:     53161   
+Average latency for a packet:      33.3655 
+
+Average number of packets at t:    18.2854 
+Power report use ebit model (J): 
+
+Link energy consumption:           4.138110e-05
+Crossbar energy consumption:       2.833459e-05
+Routing engine energy consumption: 2.982660e-08
+Arbiter energy consumption:        3.444995e-07
+Buffer read energy consumption:    1.152878e-04
+Buffer write energy consumption:   3.090716e-04
+Total network energy consumption:  4.944494e-04
+============================================================
+
+
+Running iteration 8 with rate .081;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_8.config,
+../config_files/free_links_8x8.config,
+Network size               = (8x8)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 100000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    	LR link adaptive routing   = 0       
+
+
+============================================================
+Performance report for the period of [2000, 100000]: 
+
+Total sent packets number:         60765   
+Total received packets number:     60767   
+Average latency for a packet:      34.0731 
+
+Average number of packets at t:    21.3289 
+Power report use ebit model (J): 
+
+Link energy consumption:           4.725161e-05
+Crossbar energy consumption:       3.241748e-05
+Routing engine energy consumption: 3.413180e-08
+Arbiter energy consumption:        3.942281e-07
+Buffer read energy consumption:    1.316642e-04
+Buffer write energy consumption:   3.529740e-04
+Total network energy consumption:  5.647357e-04
+============================================================
+
+
+Running iteration 9 with rate .091;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_8.config,
+../config_files/free_links_8x8.config,
+Network size               = (8x8)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 100000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    	LR link adaptive routing   = 0       
+
+
+============================================================
+Performance report for the period of [2000, 100000]: 
+
+Total sent packets number:         68098   
+Total received packets number:     68095   
+Average latency for a packet:      34.8744 
+
+Average number of packets at t:    24.3678 
+Power report use ebit model (J): 
+
+Link energy consumption:           5.285852e-05
+Crossbar energy consumption:       3.631948e-05
+Routing engine energy consumption: 3.824890e-08
+Arbiter energy consumption:        4.417817e-07
+Buffer read energy consumption:    1.473286e-04
+Buffer write energy consumption:   3.949683e-04
+Total network energy consumption:  6.319549e-04
+============================================================
+
+
+Running iteration 10 with rate .101;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_8.config,
+../config_files/free_links_8x8.config,
+Network size               = (8x8)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 100000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    	LR link adaptive routing   = 0       
+
+
+============================================================
+Performance report for the period of [2000, 100000]: 
+
+Total sent packets number:         75398   
+Total received packets number:     75401   
+Average latency for a packet:      36.116  
+
+Average number of packets at t:    27.8721 
+Power report use ebit model (J): 
+
+Link energy consumption:           5.861980e-05
+Crossbar energy consumption:       4.018576e-05
+Routing engine energy consumption: 4.231050e-08
+Arbiter energy consumption:        4.886967e-07
+Buffer read energy consumption:    1.633476e-04
+Buffer write energy consumption:   4.379128e-04
+Total network energy consumption:  7.005970e-04
+============================================================
+
+
+Running iteration 11 with rate .111;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_8.config,
+../config_files/free_links_8x8.config,
+Network size               = (8x8)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 100000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    	LR link adaptive routing   = 0       
+
+
+============================================================
+Performance report for the period of [2000, 100000]: 
+
+Total sent packets number:         83019   
+Total received packets number:     83002   
+Average latency for a packet:      37.7008 
+
+Average number of packets at t:    32.0262 
+Power report use ebit model (J): 
+
+Link energy consumption:           6.456767e-05
+Crossbar energy consumption:       4.424914e-05
+Routing engine energy consumption: 4.658630e-08
+Arbiter energy consumption:        5.380775e-07
+Buffer read energy consumption:    1.799052e-04
+Buffer write energy consumption:   4.823113e-04
+Total network energy consumption:  7.716179e-04
+============================================================
+
+
+Running iteration 12 with rate .121;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_8.config,
+../config_files/free_links_8x8.config,
+Network size               = (8x8)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 100000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    	LR link adaptive routing   = 0       
+
+
+============================================================
+Performance report for the period of [2000, 100000]: 
+
+Total sent packets number:         90996   
+Total received packets number:     90993   
+Average latency for a packet:      39.9673 
+
+Average number of packets at t:    37.1221 
+Power report use ebit model (J): 
+
+Link energy consumption:           7.060849e-05
+Crossbar energy consumption:       4.842964e-05
+Routing engine energy consumption: 5.099920e-08
+Arbiter energy consumption:        5.890465e-07
+Buffer read energy consumption:    1.968127e-04
+Buffer write energy consumption:   5.276332e-04
+Total network energy consumption:  8.441241e-04
+============================================================
+
+
+Running iteration 13 with rate .131;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_8.config,
+../config_files/free_links_8x8.config,
+Network size               = (8x8)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 100000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    	LR link adaptive routing   = 0       
+
+
+============================================================
+Performance report for the period of [2000, 100000]: 
+
+Total sent packets number:         97668   
+Total received packets number:     97669   
+Average latency for a packet:      43.1855 
+
+Average number of packets at t:    43.0571 
+Power report use ebit model (J): 
+
+Link energy consumption:           7.597080e-05
+Crossbar energy consumption:       5.209593e-05
+Routing engine energy consumption: 5.486330e-08
+Arbiter energy consumption:        6.336792e-07
+Buffer read energy consumption:    2.116803e-04
+Buffer write energy consumption:   5.674868e-04
+Total network energy consumption:  9.079223e-04
+============================================================
+
+
+Running iteration 14 with rate .141;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_8.config,
+../config_files/free_links_8x8.config,
+Network size               = (8x8)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 100000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    	LR link adaptive routing   = 0       
+
+
+============================================================
+Performance report for the period of [2000, 100000]: 
+
+Total sent packets number:         105138  
+Total received packets number:     105148  
+Average latency for a packet:      51.0164 
+
+Average number of packets at t:    54.695  
+Power report use ebit model (J): 
+
+Link energy consumption:           8.152374e-05
+Crossbar energy consumption:       5.589862e-05
+Routing engine energy consumption: 5.885650e-08
+Arbiter energy consumption:        6.798030e-07
+Buffer read energy consumption:    2.272661e-04
+Buffer write energy consumption:   6.092703e-04
+Total network energy consumption:  9.746974e-04
+============================================================
+
+
+Running iteration 15 with rate .151;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_8.config,
+../config_files/free_links_8x8.config,
+Network size               = (8x8)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 100000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    	LR link adaptive routing   = 0       
+
+
+============================================================
+Performance report for the period of [2000, 100000]: 
+
+Total sent packets number:         113154  
+Total received packets number:     113034  
+Average latency for a packet:      115.842 
+
+Average number of packets at t:    134.683 
+Power report use ebit model (J): 
+
+Link energy consumption:           8.766992e-05
+Crossbar energy consumption:       6.014985e-05
+Routing engine energy consumption: 6.332850e-08
+Arbiter energy consumption:        7.314534e-07
+Buffer read energy consumption:    2.443850e-04
+Buffer write energy consumption:   6.551653e-04
+Total network energy consumption:  1.048165e-03
+============================================================
+
+
+Running iteration 16 with rate .161;
+[I] Simulation completed successfully.
+
+Parameters used in this simulation: 
+Configuration files        = ../config_files/hotspot_8.config,
+../config_files/free_links_8x8.config,
+Network size               = (8x8)	Routing scheme             = Routing Table
+Input channel buffer size  = 2 		Output channel buffer size = 1 
+Routing engine delay       = 1 		Routing engine delay OE    = 2 
+Arbitration delay          = 1 		Traffic mode               = uniform
+Packet generation rate     = 0       	Number of flits per packet = 5       
+Simulation length          = 100000  	Warm up period             = 2000    
+Mode switch threshold      = 0.61    	LR link adaptive routing   = 0       
+
+
+============================================================
+Performance report for the period of [2000, 100000]: 
+
+Total sent packets number:         120425  
+Total received packets number:     118787  
+Average latency for a packet:      548.57  
+
+Average number of packets at t:    830.658 
+Power report use ebit model (J): 
+
+Link energy consumption:           9.211362e-05
+Crossbar energy consumption:       6.324860e-05
+Routing engine energy consumption: 6.660320e-08
+Arbiter energy consumption:        7.692750e-07
+Buffer read energy consumption:    2.567833e-04
+Buffer write energy consumption:   6.884164e-04
+Total network energy consumption:  1.101398e-03
+============================================================
+
+

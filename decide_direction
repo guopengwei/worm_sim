@@ -1,0 +1,7 @@
+network.cpp:            Direction out_dir = re->decide_direction(src_pos, dst_pos);
+network.cpp:                out_dir = re->decide_direction(src_pos, dst_pos);
+network.cpp:                out_dir = re->decide_direction(src_pos, dst_pos);
+port.cpp:        re->set_routing_scheme(rs);
+port.cpp:        re->set_routing_table(table_string);
+traffic.cpp:    // rewind the trace file and pre-fetch one message
+traffic.cpp:            // time to do send the message in the pre-fetched message

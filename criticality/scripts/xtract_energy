@@ -1,0 +1,7 @@
+ grep Link Rate_Latency_algo8x8_ener.out | awk '{print $4}' > linkM.m
+ grep Crossbar Rate_Latency_algo8x8_ener.out | awk '{print $4}' > crossM.m
+ grep Arbiter Rate_Latency_algo8x8_ener.out | awk '{print $4}' > arbiterM.m
+ grep engine Rate_Latency_algo8x8_ener.out | awk '{print $5}' > ReM.m
+ grep "read energy" Rate_Latency_algo8x8_ener.out | awk '{print $4}' > BrdM.m
+ grep "write energy" Rate_Latency_algo8x8_ener.out | awk '{print $4}' > BwrM.m
+ grep "network energy" Rate_Latency_algo8x8_ener.out | awk '{print $5}' > tEM.m

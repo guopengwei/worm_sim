@@ -1,0 +1,5 @@
+- Clean up the Makefile -> no ref to intel gcc
+- Complete ChangeLog, decide to keep or not
+
+- Format of the routing_table
+

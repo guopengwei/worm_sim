@@ -1,0 +1,15 @@
+;; Object library_LIB/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "library_LIB/"
+  :tables (list 
+   (semanticdb-table "LIB_defines.h"
+    :major-mode 'c-mode
+    :tags '(("_LIB_DEFINES_H" variable (:constant-flag t) nil [24 49]) ("sys/types.h" include (:system-flag t) nil [48 70]) ("LIB_Type_max_uint" variable (:constant-flag t :default-value (nil)) nil [72 109]) ("LIB_Type_max_int" variable (:constant-flag t) nil [108 140]))
+    :file "LIB_defines.h"
+    :pointmax 170
+    )
+   )
+  :file "semantic.cache"
+  :semantic-tag-version "2.0beta3"
+  :semanticdb-version "2.0beta3"
+  )

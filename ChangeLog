@@ -1,0 +1,218 @@
+2011-01-13  Guopeng(Daniel) Wei <guopengw@ece.cmu.edu>
+	* util.cpp: Added new argument "-redirect_output" to redirect the
+	standard output to file "/wormsim_data/log.txt"
+
+2010-11-07  Guopeng(Daniel) Wei <guopengw@ece.cmu.edu>
+	* util.cpp: Added new feature "Dynamic loading", ATG.config starttime xx
+ 	endtime xx
+
+2005-12-07  Umit Y Ogras <uogras@ece.cmu.edu>
+	* traffic.cpp: Modified to support ON/OFF traffic source model
+
+2005-04-20  Umit Y Ogras <uogras@ece.cmu.edu>
+        * repeater.cpp, repeater.hpp: Version 4.1 models repeaters for 
+	the implementation of long-range links 
+
+	* util.cpp: Modified to parse the long-range link configuration
+	and the routing table for the customized network
+	* network.cpp: Modified to instantiate the long-range links
+	
+2005-01-20  Jingcao Hu  <jingcao@ece.cmu.edu>
+
+	* version.hpp (VERSION): Version 3.11 fixed a bug when a trace
+	file contains zero messages
+	(VERSION): Version 3.12 substitutes float w/ double type variables
+	through out the program. DONT FORGET TO CHANGE FROM "%f" to "%lf%
+	for scanf when Umit merges changes. 
+
+2005-01-19  Jingcao Hu  <jingcao@ece.cmu.edu>
+
+	* version.hpp: starting from version 3.1, we have removed the
+	matlab lib support in worm_sim. That is, we removed the capability
+	of worm_sim to call matlab functions (fsolve etc), directly.
+
+2004-12-30  Jingcao Hu  <jingcao@ece.cmu.edu>
+
+	* network.cpp: There is another bug which appears in adaptive
+	routing (e.g. odd-even or dyad). This is caused by ticking the
+	in_ports not exactly at the same time. So the order of the
+	in_ports execution will affect the result. This problem is fixed
+	by modifying the port's num_of_empty_buffer_slots() function to
+	insure that the number of empty buffer slots returned are all
+	aligned to the previous clock edge
+
+2004-12-18  Jingcao Hu  <jingcao@ece.cmu.edu>
+
+	* arbiter.cpp: The arbitration policy of the arbiter has been
+	modified. It still uses FCFS policy. However, if multiple request
+	has the same timestamp, it will choose winner randomly in order to
+	avoid bias. 
+
+	However, it does not help at all. The performance indeed degrades
+	a little bit. So it's disabled by default. Take a look at the 
+	"int this_choice = 0;" statement to enable/disable that. 
+
+	* util.cpp: Added support to dump the trace into files for traffic
+	source so that we can replay it later (either in worm_sim or
+	Metropolis NoC simulator). Right now, we assume each packet
+	corresponds to a separate message with the message size equal to
+	the packet size. And each node generates a separate trace file
+	(with name of nodeid.trace).
+
+	* network.cpp: There is a bug in the old Network::tick() function
+	in which router is processed one by one. In the new function, we
+	process them in parallel, with separate stage of inport, outport,
+	arbiter, etc. 
+	Also, now the traffic sink tick function is moved to the end of
+	the Network::tick() so that as soon as a packet reaches the sink
+	node, it will be instantaneously consumed, instead of waiting for
+	an extra cycle. 
+
+2004-12-15  Jingcao Hu  <jingcao@ece.cmu.edu>
+
+	* version.hpp (VERSION): version 3.0 modifies the worm_sim to
+	match the behavior of my Metropolis NoC model. 
+
+2004-10-29  Jingcao Hu  <jingcao@ece.cmu.edu>
+
+	* version.hpp: Notice that, compared with worm_sim 1.x, you will
+	get different simulation results due to the change of the
+	simulator: 
+
+	1. In the 2.0 version, the consumption rate of the packets at the
+	sink is now default to infinite fast instead of 1 packet per clock
+	cycle.
+
+	2. Worm_sim 1.x version does not enforce the arbitration delay in
+	a correct way. This has been fixed. More precisely, if you specify
+	an arbitration_delay to be 1 in worm_sim 1.x (which is the default
+	value in worm_sim), it actually corresponds to an arbitration
+	delay of 2 clock cycles. This problems has been fixed in 2.0. So
+	if you want to have similar arbitration delay as the default run
+	in worm_sim 1.x, you should instead specify "-arbitration_delay
+	2". 
+
+	3. Worm_sim 2.0 now supports routing delay to be 0, while in 1.x
+	version, it has to be at least 1. The arbitration delay still has
+	to be at least 1 due to the current implementation of worm_sim. 
+
+	4. A new parameter (arbiter_lookahead) is used to control the way
+	the arbiter works in worm_sim, it's meaning is explained in
+	misc.hpp. 
+
+2004-10-12  Jingcao Hu  <jingcao@ece.cmu.edu>
+
+	* network.cpp: 2.0 version and above also allows you to perform
+	latency analysis right inside the worm_sim, instead of exporting
+	an equation and do analysis in matlab. It essentially cause a
+	dynamic library which is compiled from the matlab source file. Use
+	-analyze_latency to enable latency analysis.
+
+2004-10-05  Jingcao Hu  <jingcao@ece.cmu.edu>
+
+	* misc.hpp: The current version assume the flit size as the atomic
+	size of the network. This means that, for instance, the link width
+	is the same as the flit size. 
+
+	* version.hpp (VERSION): In this new version, I am planning to
+	include the power model release from Orion group so that we can
+	characterize the dynamic power consumption more accurately through
+	the simulation instead of using the e-bit metric which can not
+	take into consideration the dynamic effects such as congestion,
+	etc. 
+
+2004-04-06  Jingcao Hu  <jingcao@ece.cmu.edu>
+
+	* network.cpp (dump_equation_file): The support of optimization
+	equation generation for oe-fixed routing has been provided. 
+
+2004-04-04  Jingcao Hu  <jingcao@ece.cmu.edu>
+
+	* network.cpp (dump_equation_file): A correction item will be
+	added in the equations between the effective service rate and the
+	service rate. In the previous implementation, we did not include
+	the routing delay itself. The preliminary results show that this
+	delay may not be neglected.
+
+2004-04-01  Jingcao Hu  <jingcao@ece.cmu.edu>
+
+	* version.hpp (VERSION): New features to be added in version 1.3: 
+	1. Allow configuring individual input buffer depth. That is, the
+	depth of each input buffer in a router does not need to be the
+	same. 
+
+	2. More flexibility for the user to specify the traffic rate. Now
+	the user can customize the traffic rate of any traffic source/sink
+	pair in the configuration file.
+
+	3. Support the export of the current configuration to Matlab .m
+	file so that the service rate of each link can be solved by fsolve
+	function call in matlab. Hopefully these service rates can be in
+	turn used to calculate the average packet latency analytically. 
+
+2004-03-17  Jingcao Hu  <jingcao@ece.cmu.edu>
+
+	* misc.hpp (pParam): Starting from version 1.2, the
+	packet_generating_rate and packet_consuming_rate will be
+	represented in the system using float and is now the inverse of
+	the old metric used in version 1.1. More specifically, we now use
+	these two values to represents the probability of a packet will be
+	generate/consume in a clock cycle. So the larger this value, the
+	fast it is to generate/consume the packet. 
+
+2003-10-30  Jingcao Hu  <jingcao@ece.cmu.edu>
+
+	* version.hpp (VERSION): The new features developed in version 1.1
+	of a2router include:
+	
+	1. Added traffic pattern injection from the external trace files.
+	More specifically, each traffic source can be attached with a
+	trace file, where each line in the trace file has the format of
+	the following:
+
+	PERIOD        num-of-cycles
+	timestamp1    destination1     message_size1
+	timestamp2    destination2     message_size2
+	......
+	......
+
+	The first line of this file is optional, where you can specify the
+	period of the traffic generation if you want. If you don't
+	specify, the period will be set as the timestamp of the last
+	message in the file + 1. That means, the sending process will wrap
+	around when it enters the next period. 
+
+	NOTE: If you do specify a period, make sure that the largest
+	timestamp that you specify in the file should be no larger than
+	the PERIOD. Otherwise, the behavior may not be what you want.
+	
+	Note that the messages should be sorted using timestamp. And when
+	the net_clock reaches the timestamp given in the corresponding
+	line, it will generates a series of packets the sum of which meets
+	the message size and then send them to the output buffer.
+
+2003-10-25  Jingcao Hu  <jingcao@ece.cmu.edu>
+
+	* version.hpp (VERSION): In version 1.0, I have added support of
+	energy consumption data collection. The following parameters are
+
+	allowed to be specified: link_ebit, sw_ebit,
+	fixed_arbitration_ebit, oe_arbitration_ebit, buf_read_ebit and
+	buf_write_ebit. To enable the future support of heterogeneous
+	architecture, each link can be assigned a different link_ebit (in
+	case that links have different length). And each switch can also
+	have it's own sw_ebit (in case they are using different switching
+	fabrics).
+
+2003-10-16  Jingcao Hu  <jingcao@ece.cmu.edu>
+
+	* port.cpp (a_flit): need to remove/modify the interface of
+	receive function call as now the function argument has no effects
+	at all. And so is the receiving function call for all the other
+	components.
+
+2003-10-14  Jingcao Hu  <jingcao@ece.cmu.edu>
+
+	* version.hpp (VERSION): Currently, only one virtual channel is
+	allowed for each port. 
+

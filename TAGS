@@ -1,0 +1,2048 @@
+
+version.hpp,52
+#define VERSION_HPP_10,347
+#define VERSION 12,371
+
+msg.hpp,920
+#define MSG_HPP_10,390
+#define ERRO_PARSING_OPTIONS 13,429
+#define ERRO_UNRECOGNIZED_OPTION 14,493
+#define ERRO_NETWORK_BUILD_ERROR 15,554
+#define ERRO_ARCH_NOT_SUPPORTED 16,620
+#define ERRO_RESOURCE_NOT_FOUND 17,694
+#define ERRO_NOT_HEADER_FLIT 18,762
+#define ERRO_WRAP_CLOCK 19,852
+#define ERRO_TRAFFIC_PATTEN_NOT_SUPPORTED 20,925
+#define ERRO_PROC_PACKET 21,1007
+#define ERRO_BAD_HOTSPOT_PARAM 22,1069
+#define ERRO_BAD_TRACE_FILE 23,1141
+#define ERRO_PARSING_TRACE_FILE 24,1192
+#define ERRO_CONFIG_FILE 25,1262
+#define ERRO_PACKET_RATE 26,1326
+#define ERRO_EQUATION_FILE 27,1411
+#define ERRO_OPEN_FILE 28,1479
+#define WARN_BUFFER_OVERFLOW 31,1551
+#define WARN_PACKET_RATE 32,1615
+#define WARN_EQN_NOT_SOLVABLE 33,1676
+#define WARN_OPTION_CONFIG_FILE 34,1771
+#define WARN_EMPTY_TRACE_FILE 35,1854
+#define INFO_TIMER_FIRED 38,1952
+#define INFO_CONFIG_NODE 39,2012
+#define INFO_SIM_DONE 40,2073
+
+channel.hpp,2550
+#define CHANNEL_HPP_10,347
+typedef class Channel 18,510
+    Position pos;Channel::pos20,569
+    class Port * port;Channel::port21,651
+    class Router * router;Channel::router22,675
+    class Repeater * repeater;Channel::repeater23,745
+    bool link_user;Channel::link_user24,822
+    double load;Channel::load27,973
+    double dir_load[Channel::dir_load28,1038
+    ~Channel(Channel::~Channel36,1417
+    void grant_link(Channel::grant_link42,1648
+    void deprive_link(Channel::deprive_link43,1700
+    bool can_use_link(Channel::can_use_link44,1753
+    class Port * get_port(Channel::get_port45,1810
+    class Router * get_router(Channel::get_router46,1866
+    class Repeater * get_repeater(Channel::get_repeater47,1928
+    Position get_position(Channel::get_position48,2002
+    double get_load(Channel::get_load53,2182
+    double get_load(Channel::get_load54,2232
+    vector <int> congestion_monitor;Channel::congestion_monitor56,2314
+    unsigned int monitoring;Channel::monitoring57,2358
+  vector<int> buffer_monitor;Channel::buffer_monitor59,2390
+typedef Channel *pChannel;pChannel65,2564
+typedef class Input_channel 71,2666
+    class Routing_engine re;Input_channel::re73,2724
+    class Sw_input_end * swi;Input_channel::swi74,2754
+    unsigned int can_accept;Input_channel::can_accept76,2787
+    void bind(Input_channel::bind81,3015
+    class Sw_input_end * get_bound_sw_end(Input_channel::get_bound_sw_end86,3199
+    bool switch_granted(Input_channel::switch_granted88,3324
+    class Routing_engine * get_routing_engine(Input_channel::get_routing_engine89,3408
+    unsigned int get_can_accept Input_channel::get_can_accept95,3622
+typedef Input_channel *pInput_channel;pInput_channel98,3690
+typedef class Output_channel 101,3734
+    class Sw_output_end * swo;Output_channel::swo103,3793
+    int last_inject_time;Output_channel::last_inject_time104,3825
+    unsigned int can_output;Output_channel::can_output106,3854
+    void bind(Output_channel::bind111,4084
+    bool switch_granted(Output_channel::switch_granted117,4317
+    class Sw_output_end * get_bound_sw_end(Output_channel::get_bound_sw_end118,4401
+    void set_last_inject_time(Output_channel::set_last_inject_time120,4495
+    int get_last_inject_time(Output_channel::get_last_inject_time121,4563
+    void update_can_output(Output_channel::update_can_output123,4664
+    unsigned int get_can_output(Output_channel::get_can_output124,4742
+typedef Output_channel *pOutput_channel;pOutput_channel127,4803
+
+misc.hpp,8174
+#define MISC_HPP_10,385
+typedef class Net_clock 21,559
+	int clk;Net_clock::clk22,586
+    list<class Timer *> timers;Net_clock::timers23,597
+    Net_clock(Net_clock::Net_clock25,639
+    void reset(Net_clock::reset26,689
+    int get_clock(Net_clock::get_clock28,745
+    void register_timer(Net_clock::register_timer30,826
+typedef Net_clock *pNet_clock;pNet_clock33,902
+typedef struct Param 36,938
+  bool verbose;Param::verbose39,993
+  bool extreme_verbose;Param::extreme_verbose40,1011
+  bool print_simulation_time;Param::print_simulation_time41,1036
+  long int rand_seed;Param::rand_seed42,1067
+  vector<char*> config_files;Param::config_files44,1094
+  char* equation_file;Param::equation_file45,1125
+  char* perf_anal_lib_equation_file;Param::perf_anal_lib_equation_file46,1149
+  char* config_file_to_dump;Param::config_file_to_dump47,1187
+  bool dump_traffic_source_trace;Param::dump_traffic_source_trace49,1221
+  bool dump_input_buffer;Param::dump_input_buffer50,1256
+  bool dump_output_buffer;Param::dump_output_buffer51,1283
+  Topology topology;Param::topology53,1315
+  ATGSets  ATGSETs;Param::ATGSETs54,1337
+  unsigned int n_of_rows;Param::n_of_rows56,1362
+  unsigned int n_of_cols;Param::n_of_cols57,1389
+  unsigned int source_buffer_size;Param::source_buffer_size58,1416
+  unsigned int sink_buffer_size;Param::sink_buffer_size59,1452
+  unsigned int in_channel_buffer_size;Param::in_channel_buffer_size60,1486
+  unsigned int out_channel_buffer_size;Param::out_channel_buffer_size61,1526
+  unsigned int n_of_switch_ports;Param::n_of_switch_ports63,1571
+  unsigned int n_of_ports;Param::n_of_ports65,1611
+  int n_of_extra_links;Param::n_of_extra_links66,1675
+  double  n_of_packets;Param::n_of_packets67,1707
+  unsigned int max_n_of_packets;Param::max_n_of_packets68,1739
+  double  n_cnt Param::n_cnt69,1774
+  double n_t;Param::n_t70,1799
+  bool  adaptive_LR1;Param::adaptive_LR171,1814
+  unsigned int look_ahead;Param::look_ahead72,1837
+  bool flow_control;Param::flow_control73,1904
+  int availability_thresh;Param::availability_thresh74,1963
+  int on_off_complete_time;Param::on_off_complete_time75,1991
+  bool  print_n_of_packets;Param::print_n_of_packets76,2020
+  char* file_to_print_n_of_packets;Param::file_to_print_n_of_packets77,2112
+  ofstream packets_t;Param::packets_t78,2188
+  ofstream logFile;Param::logFile79,2211
+  unsigned int n_of_vcs;Param::n_of_vcs81,2234
+  int routing_engine_delay_xy;Param::routing_engine_delay_xy83,2329
+  int routing_engine_delay_oe;Param::routing_engine_delay_oe84,2361
+  Routing_scheme routing_scheme;Param::routing_scheme85,2393
+  int arbitration_delay;Param::arbitration_delay87,2431
+  bool arbiter_lookahead;Param::arbiter_lookahead96,2768
+  double packet_generating_rate;Param::packet_generating_rate98,2800
+  double packet_consuming_rate;Param::packet_consuming_rate99,2834
+  unsigned int flit_size;Param::flit_size101,2871
+  unsigned int flits_per_packet;Param::flits_per_packet102,2898
+  unsigned int overhead_per_packet;Param::overhead_per_packet103,2932
+  class Network * network;Param::network105,2973
+  Traffic_mode traffic_mode;Param::traffic_mode107,3005
+  double switch_mode_threshold;Param::switch_mode_threshold109,3039
+  int simulation_length;Param::simulation_length111,3123
+  int warmup_period;Param::warmup_period112,3149
+  bool parse_error;Param::parse_error114,3247
+  bool quit_flag;Param::quit_flag115,3268
+  double link_ebit;Param::link_ebit120,3469
+  double xbar_ebit;Param::xbar_ebit121,3490
+  double fixed_routing_engine_epacket;Param::fixed_routing_engine_epacket122,3511
+  double oe_routing_engine_epacket;Param::oe_routing_engine_epacket123,3551
+  double arbiter_epacket;Param::arbiter_epacket124,3588
+  double buf_read_ebit;Param::buf_read_ebit125,3615
+  double buf_write_ebit;Param::buf_write_ebit126,3640
+  int n_of_received_packets;Param::n_of_received_packets129,3692
+  int n_of_sent_packets;Param::n_of_sent_packets130,3722
+  int gen_delay;Param::gen_delay131,3748
+  double ave_gen_delay;Param::ave_gen_delay132,3826
+  double total_latency;Param::total_latency133,3851
+  double avg_latency;Param::avg_latency134,3876
+    double link_energy;Param::link_energy138,3952
+    double xbar_energy;Param::xbar_energy139,3977
+    double re_energy;Param::re_energy140,4002
+    double arbiter_energy;Param::arbiter_energy141,4025
+    double buf_read_energy;Param::buf_read_energy142,4053
+    double buf_write_energy;Param::buf_write_energy143,4082
+    double total_energy;Param::total_energy144,4113
+  } energy;Param::energy145,4139
+    bool use_orion_power_model;Param::use_orion_power_model150,4207
+    double link_length;Param::link_length151,4240
+    double link_energy;Param::link_energy152,4291
+    double xbar_energy;Param::xbar_energy153,4316
+    double re_energy;Param::re_energy154,4341
+    double arbiter_energy;Param::arbiter_energy155,4364
+    double buf_energy;Param::buf_energy156,4392
+    double total_energy;Param::total_energy157,4416
+  } orion_power;Param::orion_power158,4442
+  double hotspot_percentage;Param::hotspot_percentage164,4638
+  vector<unsigned int> hotspots;Param::hotspots165,4726
+  vector<unsigned int> non_hotspots;Param::non_hotspots166,4800
+typedef Param *pParam;pParam172,5004
+typedef class Timer 175,5032
+  int delay;Timer::delay176,5055
+  int init_time;Timer::init_time177,5069
+  int fire_time;Timer::fire_time178,5087
+  bool initialized;Timer::initialized179,5105
+  bool fired;Timer::fired180,5126
+  class Timer_owner * owner;Timer::owner181,5141
+  void set_delay(Timer::set_delay185,5222
+  int get_delay(Timer::get_delay186,5293
+typedef Timer *pTimer;pTimer191,5421
+typedef class Timer_owner 194,5449
+  class Timer timer;Timer_owner::timer196,5490
+  virtual void timer_fired(Timer_owner::timer_fired198,5521
+  void init_timer(Timer_owner::init_timer200,5581
+  void set_delay(Timer_owner::set_delay201,5630
+  virtual ~Timer_owner(Timer_owner::~Timer_owner202,5679
+typedef Timer_owner *pTimer_owner;pTimer_owner204,5713
+typedef class Buffer 207,5753
+  list<class Flit *> fifo;Buffer::fifo209,5787
+  int size;Buffer::size210,5815
+  int last_full_time;Buffer::last_full_time211,5878
+  int last_get_time;Buffer::last_get_time212,5945
+  int last_add_time;Buffer::last_add_time213,6025
+  unsigned int get_num_of_flits(Buffer::get_num_of_flits226,6425
+  void flush(Buffer::flush227,6494
+  unsigned int get_capacity(Buffer::get_capacity228,6532
+  void set_capacity(Buffer::set_capacity229,6607
+typedef Buffer *pBuffer;pBuffer231,6653
+typedef class Buffer_owner 234,6683
+  class Buffer buffer;Buffer_owner::buffer236,6725
+  Buffer_owner(Buffer_owner::Buffer_owner244,6902
+  virtual ~Buffer_owner(Buffer_owner::~Buffer_owner245,6950
+  void flush_buffer(Buffer_owner::flush_buffer246,6980
+  virtual void bind(Buffer_owner::bind247,7027
+  virtual void bind(Buffer_owner::bind248,7067
+  unsigned int num_of_empty_buffer_slots(Buffer_owner::num_of_empty_buffer_slots249,7109
+  unsigned int get_capacity(Buffer_owner::get_capacity250,7196
+  void set_buffer_size(Buffer_owner::set_buffer_size251,7271
+  unsigned int get_num_of_flits(Buffer_owner::get_num_of_flits252,7330
+typedef Buffer_owner *pBuffer_owner;pBuffer_owner254,7416
+typedef class Addressee 257,7458
+  Position pos;Addressee::pos259,7497
+  Addressee(Addressee::Addressee261,7523
+  Position get_position(Addressee::get_position262,7561
+typedef Addressee *pAddressee;pAddressee265,7654
+typedef class Connector 269,7754
+  class Connector * source;Connector::source271,7793
+  class Connector * sink;Connector::sink272,7822
+  void bind_source(Connector::bind_source275,7862
+  void bind_sink(Connector::bind_sink276,7919
+    Connector(Connector::Connector277,7972
+  Connector(Connector::Connector278,8012
+  class Connector * get_source(Connector::get_source280,8105
+  class Connector * get_sink(Connector::get_sink281,8168
+  virtual ~Connector(Connector::~Connector282,8227
+typedef Connector *pConnector;pConnector288,8429
+
+pkt.hpp,2273
+#define PKT_HPP_10,339
+typedef class Flit 23,532
+    class Packet * pkt;Flit::pkt25,564
+    unsigned int seq_id;Flit::seq_id27,631
+    unsigned int flit_size;Flit::flit_size28,712
+    unsigned int pkt_size;Flit::pkt_size29,772
+    int src_id;Flit::src_id32,909
+    int dst_id;Flit::dst_id33,926
+    int control_flag;Flit::control_flag36,947
+    int * payload;Flit::payload38,992
+    Atom_type raw_data;Flit::raw_data39,1023
+    bool processed;Flit::processed41,1050
+    int arrival_timestamp;Flit::arrival_timestamp42,1134
+    vector<class Router *> routing_path;Flit::routing_path44,1209
+  int get_sequence_id(Flit::get_sequence_id54,1484
+    void write_src_id(Flit::write_src_id57,1611
+    void write_dst_id(Flit::write_dst_id60,1740
+    unsigned int get_flit_size(Flit::get_flit_size63,1841
+    int * get_payload(Flit::get_payload66,1943
+    class Packet * get_packet(Flit::get_packet68,1994
+    bool is_header(Flit::is_header70,2049
+    bool is_tail(Flit::is_tail71,2107
+    bool is_processed(Flit::is_processed74,2243
+    void reset_processed_flag(Flit::reset_processed_flag75,2300
+  void get_processed(Flit::get_processed76,2360
+    Atom_type raw(Flit::raw81,2501
+} Flit,83,2620
+} Flit, *pFlit;pFlit83,2620
+typedef class Packet 86,2641
+    int id;Packet::id88,2696
+    vector<class Flit *> flits;Packet::flits89,2798
+    unsigned int packet_size;Packet::packet_size90,2831
+    unsigned int flit_size;Packet::flit_size91,2899
+    int birth_time;Packet::birth_time93,2930
+    int death_time;Packet::death_time94,2995
+    int sent_time;Packet::sent_time95,3054
+    int age;Packet::age101,3277
+    unsigned int size(Packet::size104,3363
+    int get_id(Packet::get_id105,3422
+    void set_death_time(Packet::set_death_time106,3465
+    int get_latency(Packet::get_latency107,3533
+    void set_sent_time(Packet::set_sent_time108,3602
+    int get_network_latency(Packet::get_network_latency109,3675
+    Position get_src_position(Packet::get_src_position110,3757
+    Position get_dst_position(Packet::get_dst_position111,3841
+} Packet,112,3925
+} Packet, *pPacket;pPacket112,3925
+typedef vector<pFlit>::iterator iter_flit;115,3950
+typedef vector<pPacket>::iterator iter_packet;116,3994
+
+routing_engine.hpp,648
+#define ROUTING_ENGINE_HPP_12,526
+typedef class Routing_engine 18,605
+    Position pos;Routing_engine::pos20,670
+    Routing_scheme routing_scheme;Routing_engine::routing_scheme21,689
+    vector<unsigned int> routing_table;Routing_engine::routing_table22,725
+    class Input_channel * channel;Routing_engine::channel23,773
+    int req_time;Routing_engine::req_time24,809
+    int grant_time;Routing_engine::grant_time25,828
+    int delay_xy;Routing_engine::delay_xy26,849
+    int delay_oe;Routing_engine::delay_oe27,868
+    Direction dir;Routing_engine::dir29,889
+typedef Routing_engine *pRouting_engine;pRouting_engine55,2201
+
+switch_fabric.hpp,1652
+#define SWITCH_FABRIC_HPP_10,390
+typedef class Sw_end 17,488
+    class Channel * chan;Sw_end::chan19,524
+    class Sw_end * connected_to;Sw_end::connected_to20,551
+    void bind(Sw_end::bind22,648
+    void connect(Sw_end::connect23,696
+    void disconnect(Sw_end::disconnect24,754
+    bool is_busy(Sw_end::is_busy25,803
+    Sw_end(Sw_end::Sw_end26,865
+    class Sw_end * get_other_end(Sw_end::get_other_end27,915
+    class Channel * get_bound_channel(Sw_end::get_bound_channel28,980
+} Sw_end,29,1042
+} Sw_end, *pSw_end;pSw_end29,1042
+typedef class Sw_input_end 32,1067
+} Sw_input_end, *pSw_input_end;pSw_input_end33,1113
+typedef class Sw_output_end 36,1151
+} Sw_output_end,38,1207
+} Sw_output_end, *pSw_output_end;pSw_output_end38,1207
+typedef class Switch_fabric 41,1246
+    double ebit;Switch_fabric::ebit42,1277
+    unsigned int size;Switch_fabric::size43,1295
+    class Router * router;Switch_fabric::router44,1319
+    class Repeater * repeater;Switch_fabric::repeater45,1347
+    vector<class Sw_input_end *> inputs;Switch_fabric::inputs46,1386
+    vector<class Sw_output_end *> outputs;Switch_fabric::outputs47,1428
+    void bind(Switch_fabric::bind50,1483
+    void bind(Switch_fabric::bind51,1532
+    unsigned int get_size(Switch_fabric::get_size54,1691
+    class Sw_input_end * get_input_end(Switch_fabric::get_input_end55,1747
+    class Sw_output_end * get_output_end(Switch_fabric::get_output_end56,1824
+    void set_ebit(Switch_fabric::set_ebit59,2041
+    double get_ebit(Switch_fabric::get_ebit60,2084
+} Switch_fabric,62,2161
+} Switch_fabric, *pSwitch_fabric;pSwitch_fabric62,2161
+
+arbiter.hpp,1025
+#define ARBITER_HPP_10,393
+struct Sw_connection_request{Sw_connection_request24,591
+    class Input_channel * channel;Sw_connection_request::channel25,622
+    int timestamp;Sw_connection_request::timestamp26,658
+    Direction indir;Sw_connection_request::indir27,678
+    Direction dir;Sw_connection_request::dir28,700
+typedef Sw_connection_request *pSw_connection_request;pSw_connection_request30,724
+typedef class Arbiter 32,782
+    int delay;Arbiter::delay33,807
+    int num_of_switch_port;Arbiter::num_of_switch_port34,886
+    class Router * router;Arbiter::router35,964
+    int numofreqgranted;Arbiter::numofreqgranted36,992
+    int numofreqfailed;Arbiter::numofreqfailed37,1018
+    vector<struct Sw_connection_request *>* request_queue;Arbiter::request_queue38,1043
+    bool content[Arbiter::content39,1103
+    void bind(Arbiter::bind49,1443
+    int get_requestsize(Arbiter::get_requestsize57,1871
+    int get_delay(Arbiter::get_delay58,1948
+typedef Arbiter *pArbiter;pArbiter60,2001
+
+link.hpp,238
+#define LINK_HPP_10,404
+typedef class Link 14,448
+    int   delay;Link::delay16,519
+    double e_bit;Link::e_bit17,606
+  ~Link(Link::~Link22,851
+  void set_ebit(Link::set_ebit27,986
+} Link,29,1030
+} Link, *pLink;pLink29,1030
+
+router.hpp,1275
+#define ROUTER_HPP_10,345
+typedef class Router 22,588
+  class Network * network;Router::network24,641
+  vector<class In_port *> in_ports;Router::in_ports26,673
+  vector<class Out_port *> out_ports;Router::out_ports27,710
+  class Switch_fabric sw;Router::sw29,753
+  class Arbiter arbiter;Router::arbiter30,780
+  class Power_module * power_module;Router::power_module32,810
+  In_port *sink_port;Router::sink_port33,883
+  unsigned int monitor_router;Router::monitor_router36,918
+  class Network * get_network(Router::get_network43,1030
+  class In_port * get_in_port(Router::get_in_port44,1087
+  class Out_port * get_out_port(Router::get_out_port45,1159
+  class Arbiter * get_arbiter(Router::get_arbiter51,1491
+  class Switch_fabric * get_switch(Router::get_switch52,1549
+  void set_switch_ebit(Router::set_switch_ebit54,1667
+  void set_sink(Router::set_sink62,2047
+  In_port *get_sink(Router::get_sink63,2113
+  void set_xbar_ebit(Router::set_xbar_ebit64,2162
+  class Power_module * get_power_module(Router::get_power_module65,2224
+  unsigned int get_num_of_ports(Router::get_num_of_ports71,2392
+  unsigned int get_monitor(Router::get_monitor73,2484
+  bool contention[Router::contention76,2605
+typedef Router *pRouter;pRouter78,2635
+
+network.hpp,1636
+#define NETWORK_HPP_10,387
+typedef class Network 17,504
+    bool success;Network::success19,539
+    Topology topology;Network::topology22,593
+    unsigned int n_of_rows;Network::n_of_rows23,617
+    unsigned int n_of_cols;Network::n_of_cols24,646
+    unsigned int n_of_ports;Network::n_of_ports25,675
+    unsigned int n_of_extra_links;Network::n_of_extra_links26,705
+    unsigned int n_of_switch_ports;Network::n_of_switch_ports27,748
+    unsigned int n_of_vcs;Network::n_of_vcs28,785
+    vector<class Router *> routers;Network::routers30,815
+    vector<class Link *> links;Network::links31,852
+    vector<class Traffic_source *> sources;Network::sources32,885
+    vector<class Traffic_sink *> sinks;Network::sinks33,930
+    class Router * get_router(Network::get_router46,1290
+    class Traffic_source * get_traffic_source(Network::get_traffic_source48,1422
+    class Traffic_sink * get_traffic_sink(Network::get_traffic_sink50,1565
+    Topology get_topology(Network::get_topology53,1733
+    vector<class Repeater *> repeaters;Network::repeaters54,1793
+    unsigned int get_num_of_rows(Network::get_num_of_rows55,1841
+    unsigned int get_num_of_cols(Network::get_num_of_cols56,1909
+    unsigned int get_num_of_ports(Network::get_num_of_ports57,1977
+    unsigned int get_num_of_vcs(Network::get_num_of_vcs58,2047
+    unsigned int get_num_of_traffic_sources(Network::get_num_of_traffic_sources60,2115
+    unsigned int get_num_of_traffic_sinks(Network::get_num_of_traffic_sinks61,2199
+    bool get_success_flag(Network::get_success_flag66,2360
+typedef Network *pNetwork;pNetwork74,2582
+
+traffic.hpp,3453
+#define TRAFFIC_HPP_10,393
+typedef class Traffic_source 16,483
+    static unsigned int id_base;Traffic_source::id_base18,582
+    unsigned int id;Traffic_source::id19,616
+    unsigned int packet_size;Traffic_source::packet_size20,638
+    unsigned int flit_size;Traffic_source::flit_size21,669
+    unsigned int time_start;Traffic_source::time_start22,698
+    double packet_generating_rate;Traffic_source::packet_generating_rate23,728
+    int pkt_id;Traffic_source::pkt_id24,764
+    double* packet_to_destination_rate;Traffic_source::packet_to_destination_rate25,781
+    unsigned int on_period,Traffic_source::on_period27,835
+    unsigned int on_period, off_period,Traffic_source::off_period27,835
+    unsigned int on_period, off_period, wait_period;Traffic_source::wait_period27,835
+    unsigned int on_off_model;Traffic_source::on_off_model28,889
+    int next_generation_time;Traffic_source::next_generation_time29,921
+    int total_pkt_sent;Traffic_source::total_pkt_sent30,952
+    int pkt_to_sent;Traffic_source::pkt_to_sent31,977
+    Traffic_mode traffic_mode;Traffic_source::traffic_mode33,1001
+    int period;Traffic_source::period35,1035
+    ifstream trace_file;Traffic_source::trace_file36,1116
+    int trace_file_loop_cnt;Traffic_source::trace_file_loop_cnt37,1142
+  bool trace_file_empty;Traffic_source::trace_file_empty39,1234
+    ofstream trace_dump;Traffic_source::trace_dump41,1262
+    typedef struct Message Traffic_source::Message43,1322
+        int timestamp;Traffic_source::Message::timestamp44,1352
+        unsigned int destination;Traffic_source::Message::destination45,1376
+        unsigned int size;Traffic_source::Message::size46,1411
+    } Message,Traffic_source::Message47,1439
+    } Message, *pMessage;Traffic_source::pMessage47,1439
+    Message pre_fetched_message;Traffic_source::pre_fetched_message49,1468
+    bool can_receive(Traffic_source::can_receive66,2127
+    bool receive(Traffic_source::receive68,2201
+    static void reset_id_base(Traffic_source::reset_id_base71,2310
+    bool has_trace_file(Traffic_source::has_trace_file82,2762
+    int get_id(Traffic_source::get_id83,2828
+    vector <int> src_congestion_monitor;Traffic_source::src_congestion_monitor85,2964
+    unsigned int src_monitoring;Traffic_source::src_monitoring86,3012
+  vector<int> buffer_monitor;Traffic_source::buffer_monitor88,3050
+  int get_total_pkt_sent(Traffic_source::get_total_pkt_sent90,3083
+typedef Traffic_source *pTraffic_source;pTraffic_source94,3148
+typedef class Traffic_sink 97,3194
+    static unsigned int id_base;Traffic_sink::id_base99,3291
+    unsigned int id;Traffic_sink::id100,3325
+    double packet_consuming_rate;Traffic_sink::packet_consuming_rate101,3347
+    double load;Traffic_sink::load102,3382
+    static void reset_id_base(Traffic_sink::reset_id_base106,3454
+    bool can_send(Traffic_sink::can_send107,3508
+    bool send(Traffic_sink::send109,3592
+    unsigned int get_id(Traffic_sink::get_id114,3729
+    void set_packet_consuming_rate(Traffic_sink::set_packet_consuming_rate116,3777
+  vector<int> buffer_monitor;Traffic_sink::buffer_monitor118,3870
+  int monitoring;Traffic_sink::monitoring119,3901
+    void reset_load(Traffic_sink::reset_load123,3972
+    void add_load(Traffic_sink::add_load124,4013
+    double get_load(Traffic_sink::get_load125,4057
+typedef Traffic_sink *pTraffic_sink;pTraffic_sink128,4113
+
+common.hpp,4442
+#define COMMON_HPP_12,344
+#define trace_it(20,469
+#define MAX_LINE 21,515
+typedef struct Position 26,566
+	unsigned int x;Position::x27,593
+	unsigned int y;Position::y28,611
+} Position, *pPosition;pPosition29,629
+typedef struct ATG 33,737
+	vector<int> nodes;ATG::nodes34,759
+	vector<char*> config_files;ATG::config_files35,780
+	long int time_start;ATG::time_start36,810
+	long int time_end;ATG::time_end37,833
+	bool running;ATG::running38,854
+} ATG, *pATG;pATG39,870
+typedef struct ATGSets{ATGSets41,887
+	vector<pATG> sets;ATGSets::sets42,912
+	int *currentnodes;ATGSets::currentnodes43,933
+	vector<pATG> currentATG;ATGSets::currentATG44,954
+}ATGSets, *pATGSets;pATGSets45,981
+typedef enum Direction 47,1005
+typedef enum Direction { local Direction::local47,1005
+typedef enum Direction { local = 0, north,Direction::north47,1005
+typedef enum Direction { local = 0, north, south,Direction::south47,1005
+typedef enum Direction { local = 0, north, south, east,Direction::east47,1005
+typedef enum Direction { local = 0, north, south, east, west,Direction::west47,1005
+typedef enum Direction { local = 0, north, south, east, west, extra,Direction::extra47,1005
+typedef enum Direction { local = 0, north, south, east, west, extra, invalid_dir Direction::invalid_dir47,1005
+typedef enum Direction { local = 0, north, south, east, west, extra, invalid_dir } Direction;47,1005
+typedef enum Topology 49,1130
+typedef enum Topology { mesh Topology::mesh49,1130
+typedef enum Topology { mesh = 0, torus,Topology::torus49,1130
+typedef enum Topology { mesh = 0, torus, invalid_topology Topology::invalid_topology49,1130
+typedef enum Topology { mesh = 0, torus, invalid_topology } Topology;49,1130
+typedef enum Routing_scheme 51,1203
+typedef enum Routing_scheme { xy Routing_scheme::xy51,1203
+	oe,Routing_scheme::oe52,1243
+	oe_fixed,Routing_scheme::oe_fixed53,1250
+	dyad,Routing_scheme::dyad54,1263
+	test,Routing_scheme::test55,1271
+	predict,Routing_scheme::predict56,1279
+	rtable,Routing_scheme::rtable57,1290
+	invalid_schemeRouting_scheme::invalid_scheme58,1309
+} Routing_scheme;59,1326
+typedef enum Traffic_mode 61,1347
+typedef enum Traffic_mode { uniform Traffic_mode::uniform61,1347
+	transpose1,Traffic_mode::transpose162,1431
+	transpose2,Traffic_mode::transpose263,1474
+	hotspot,Traffic_mode::hotspot64,1513
+	invalid_distribution Traffic_mode::invalid_distribution65,1524
+} Traffic_mode;66,1548
+enum mess_type 77,1863
+enum mess_type {EVG_,mess_type::EVG_77,1863
+enum mess_type {EVG_, ROUTER_,mess_type::ROUTER_77,1863
+enum mess_type {EVG_, ROUTER_, WIRE_,mess_type::WIRE_77,1863
+enum mess_type {EVG_, ROUTER_, WIRE_, CREDIT_}mess_type::CREDIT_77,1863
+enum routing_type 78,1912
+enum routing_type {XY_ routing_type::XY_78,1912
+enum routing_type {XY_ , TXY_ routing_type::TXY_78,1912
+enum VC_state_type 79,1946
+enum VC_state_type {INIT_,VC_state_type::INIT_79,1946
+enum VC_state_type {INIT_, ROUTING_,VC_state_type::ROUTING_79,1946
+enum VC_state_type {INIT_, ROUTING_, VC_AB_,VC_state_type::VC_AB_79,1946
+enum VC_state_type {INIT_, ROUTING_, VC_AB_, SW_AB_,VC_state_type::SW_AB_79,1946
+enum VC_state_type {INIT_, ROUTING_, VC_AB_, SW_AB_, SW_TR_,VC_state_type::SW_TR_79,1946
+enum VC_state_type {INIT_, ROUTING_, VC_AB_, SW_AB_, SW_TR_, HOME_}VC_state_type::HOME_79,1946
+enum flit_type 80,2016
+enum flit_type {HEADER_,flit_type::HEADER_80,2016
+enum flit_type {HEADER_, BODY_,flit_type::BODY_80,2016
+enum flit_type {HEADER_, BODY_, TAIL_}flit_type::TAIL_80,2016
+enum vc_share_type 81,2057
+enum vc_share_type {SHARE_,vc_share_type::SHARE_81,2057
+enum vc_share_type {SHARE_, MONO_}vc_share_type::MONO_81,2057
+enum VC_usage_type 82,2094
+enum VC_usage_type {USED_,VC_usage_type::USED_82,2094
+enum VC_usage_type {USED_, FREE_}VC_usage_type::FREE_82,2094
+typedef double time_type;83,2130
+typedef vector<long> add_type;84,2157
+typedef pair<long,long85,2189
+typedef pair<long, long> VC_type;85,2189
+typedef vector<unsigned long long> Data_type;86,2224
+typedef unsigned long long Atom_type;87,2271
+const VC_type VC_NULL 88,2310
+#define BUFF_BOUND_ 89,2352
+#define WIRE_DELAY_ 90,2377
+#define PIPE_DELAY_ 91,2402
+#define CREDIT_DELAY_ 92,2427
+#define REPORT_PERIOD_ 93,2454
+#define S_ELPS_ 94,2483
+#define ZERO_ 95,2511
+#define MAX_32_ 96,2528
+#define MAX_64_ 97,2584
+#define CORR_EFF_ 98,2653
+#define POWER_NOM_ 99,2676
+
+port.hpp,1106
+#define PORT_HPP_10,392
+typedef class Port 16,483
+    unsigned int size;Port::size18,537
+    Direction dir;Port::dir19,561
+    class Router * router;Port::router20,581
+    class Repeater * repeater;Port::repeater21,609
+    vector<class Channel *> channels;Port::channels22,641
+    unsigned int link_user_channel_id;Port::link_user_channel_id23,680
+	bool async_connect;Port::async_connect25,830
+	Router *async_src;Port::async_src26,893
+	Router *async_dst;Port::async_dst27,914
+    Port(Port::Port29,944
+    Port(Port::Port30,1036
+    class Channel * get_channel(Port::get_channel31,1139
+    class Channel * get_link_user_channel(Port::get_link_user_channel32,1211
+    unsigned int get_size(Port::get_size33,1303
+    Direction get_direction(Port::get_direction37,1511
+    class Router * get_router(Port::get_router38,1568
+    class Repeater * get_repeater(Port::get_repeater39,1624
+} Port,42,1722
+} Port, *pPort;pPort42,1722
+typedef class In_port 45,1743
+} In_port, *pIn_port;pIn_port59,2210
+typedef class Out_port 62,2237
+} Out_port, *pOut_port;pOut_port71,2537
+
+util.hpp,25
+#define UTIL_HPP_10,341
+
+power.hpp,933
+#define POWER_HPP_11,468
+typedef class Power_module 25,708
+    SIM_power_router_info_t router_info_;Power_module::router_info_26,738
+    SIM_power_router_t router_power_;Power_module::router_power_27,781
+    SIM_power_arbiter_t arbiter_power_;Power_module::arbiter_power_28,820
+    SIM_power_bus_t link_power_;Power_module::link_power_29,861
+    vector<Atom_type> buffer_write_;Power_module::buffer_write_35,1071
+    vector<Atom_type> crossbar_read_;Power_module::crossbar_read_36,1109
+    vector<Atom_type> crossbar_write_;Power_module::crossbar_write_37,1148
+    vector<Atom_type> link_traversal_;Power_module::link_traversal_38,1188
+    vector<int> crossbar_input_;Power_module::crossbar_input_39,1228
+    vector<Atom_type> arbiter_req_;Power_module::arbiter_req_40,1262
+    vector<unsigned int> arbiter_grant_;Power_module::arbiter_grant_41,1299
+typedef Power_module *pPower_module;pPower_module60,2075
+
+repeater.hpp,804
+#define REPEATER_HPP_10,349
+typedef class Repeater 21,570
+    class Network * network;Repeater::network23,625
+    vector<class In_port *> in_ports;Repeater::in_ports25,657
+    vector<class Out_port *> out_ports;Repeater::out_ports26,696
+    class Switch_fabric sw;Repeater::sw28,739
+    class Power_module * power_module;Repeater::power_module29,768
+    class Network * get_network(Repeater::get_network34,925
+    class In_port * get_in_port(Repeater::get_in_port35,984
+    class Out_port * get_out_port(Repeater::get_out_port36,1058
+    class Switch_fabric * get_switch(Repeater::get_switch40,1285
+    void set_switch_ebit(Repeater::set_switch_ebit41,1345
+    class Power_module * get_power_module(Repeater::get_power_module47,1568
+typedef Repeater *pRepeater;pRepeater52,1711
+
+channel.cpp,945
+Channel::Channel(23,729
+Channel::Channel(31,974
+void Channel::record_occupancy(40,1240
+void Channel::reset_load(61,2039
+void Channel::add_load(68,2255
+ofstream & operator <<(operator <<76,2515
+void Output_channel::tick(85,2931
+Input_channel::Input_channel(91,3012
+Input_channel::Input_channel(98,3257
+void Input_channel::tick(104,3645
+bool Input_channel::can_send(139,4988
+bool Input_channel::can_receive(162,6054
+pOutput_channel Input_channel::get_receiver(168,6293
+bool Input_channel::send(175,6527
+void Input_channel::update_can_accept(222,7976
+bool Input_channel::receive(232,8312
+double Input_channel::get_service_rate(260,9118
+Output_channel::Output_channel(271,9460
+Output_channel::Output_channel(278,9696
+pConnector Output_channel::get_receiver(284,9857
+bool Output_channel::can_send(294,10189
+bool Output_channel::can_receive(316,10832
+bool Output_channel::send(322,10990
+bool Output_channel::receive(358,12041
+
+misc.cpp,1069
+void check_timer(26,545
+void Net_clock::print_time(30,596
+int Net_clock::tick(34,693
+Param::Param(46,949
+string Param::get_routing_scheme_in_string(160,4560
+string Param::get_traffic_mode_in_string(181,5029
+Timer::Timer(197,5366
+void Timer::bind(202,5439
+void Timer::initialize(206,5496
+void Timer::tick(218,5748
+void Timer::fire(230,6035
+Timer_owner::Timer_owner(238,6183
+Buffer::Buffer(244,6286
+Buffer::~Buffer(254,6455
+pFlit Buffer::get_flit(260,6621
+bool Buffer::is_full_in_this_clock(275,6973
+bool Buffer::add(280,7125
+class Flit * Buffer::peek_flit(294,7453
+bool Buffer::is_full(302,7600
+bool Buffer::is_empty(307,7689
+unsigned int Buffer::empty_slots(313,7834
+bool Buffer_owner::add(325,8138
+bool Buffer_owner::add(341,8521
+pFlit Buffer_owner::get_flit(356,8930
+pPacket Buffer_owner::get_packet(363,9104
+void Addressee::print_position(380,9697
+bool operator ==(operator ==385,9800
+bool operator ==(operator ==389,9914
+bool operator !=(operator !=393,10037
+ostream & operator <<(operator <<397,10139
+Direction reverse(402,10269
+
+pkt.cpp,491
+int Flit::get_src_id(18,479
+Position Flit::get_src_position(26,630
+int Flit::get_dst_id(35,904
+Position Flit::get_dst_position(43,1055
+unsigned int Flit::get_packet_size(52,1321
+Flit::Flit(60,1522
+Atom_type Flit::convert_to_raw(85,2305
+Flit::~Flit(97,2647
+bool Flit::arrived_in_this_cycle(102,2714
+void Flit::arrive(107,2891
+void Flit::add_a_hop(112,3042
+pRouter Flit::get_previous_hop(119,3202
+Packet::Packet(131,3459
+Packet::~Packet(149,3888
+pFlit Packet::get_flit(158,4152
+
+routing_engine.cpp,907
+Routing_engine::Routing_engine(19,650
+Routing_engine::~Routing_engine(28,935
+void Routing_engine::set_routing_scheme(31,977
+void Routing_engine::set_routing_table(36,1106
+void Routing_engine::bind_channel(49,1579
+Routing_scheme Routing_engine::decide_best_routing_mode(58,1983
+void Routing_engine::get_request(85,3177
+Routing_engine::decide_direction(111,3867
+Routing_engine::decide_direction(175,6177
+Routing_engine::decide_direction_xy(243,8611
+Routing_engine::decide_direction_test(267,9197
+Routing_engine::decide_direction_oe(368,12701
+Routing_engine::decide_direction_oe_fixed(452,15527
+Routing_engine::decide_direction_predict(515,17437
+int Routing_engine::send_request_to_arbiter(596,20022
+int Routing_engine::receive_grant_from_arbiter(613,20472
+void Routing_engine::timer_fired(619,20591
+void Routing_engine::teardown_connection(627,20843
+int Routing_engine::get_delay(633,21034
+
+worm_sim.cpp,153
+Net_clock net_clock;29,693
+Param param;30,715
+unsigned int Traffic_source::id_base 31,729
+unsigned int Traffic_sink::id_base 32,772
+int main(35,817
+
+switch_fabric.cpp,130
+Switch_fabric::Switch_fabric(11,398
+void Switch_fabric::setup_connection(24,742
+void Switch_fabric::teardown_connection(33,940
+
+arbiter.cpp,542
+Arbiter::Arbiter(18,746
+Arbiter::~Arbiter(33,1167
+void Arbiter::tick(44,1469
+void Arbiter::update_contention(53,1659
+void Arbiter::process_requests(60,1912
+void Arbiter::signalcontention(67,2060
+bool Arbiter::process_requests_of_port(93,2723
+void Arbiter::receive_connection_request(184,5949
+void Arbiter::orion_record_arbiter_power(203,6693
+Direction Arbiter::get_current_granted_channel_dir(217,7213
+Atom_type Arbiter::form_req_vector(235,7966
+void Arbiter::setup_connection(254,8603
+void Arbiter::teardown_connection(269,9093
+
+link.cpp,131
+Link::Link(14,413
+bool Link::can_send(21,682
+bool Link::can_receive(26,756
+bool Link::send(34,1047
+bool Link::receive(47,1485
+
+router.cpp,789
+Router::Router(15,440
+Router::~Router(79,2763
+void Router::clear_contention(92,3179
+void Router::receivecontention(98,3297
+void Router::set_monitor(104,3429
+void Router::update_prediction(123,4068
+void Router::set_power_module(177,6342
+void Router::set_input_channel_buffer_size(182,6464
+void Router::set_input_channel_buffer_size(188,6659
+void Router::set_output_channel_buffer_size(198,6956
+void Router::set_routing_scheme(204,7155
+void Router::set_routing_table(209,7345
+pInput_channel Router::get_in_channel(221,7866
+pOutput_channel Router::get_out_channel(227,8037
+pOutput_channel Router::get_link_user_channel(233,8213
+pRouter Router::get_router(241,8615
+void Router::in_ports_tick(285,9732
+void Router::out_ports_tick(290,9889
+void Router::arbiter_tick(295,10050
+
+network.cpp,560
+void Network::reset(18,494
+Network::Network(23,587
+pRouter Network::get_router(143,5211
+pTraffic_source Network::get_traffic_source(155,5551
+pTraffic_sink Network::get_traffic_sink(167,5913
+Network::~Network(179,6223
+pLink Network::connect(201,7059
+void Network::tick(212,7378
+double Network::get_total_injection_rate(291,10790
+void Network::calc_channel_load(300,11066
+bool Network::dump_equation_file(364,13725
+bool Network::dump_perf_anal_lib_equation_file(567,22220
+bool Network::dump_config_file(842,34675
+bool Network::overloaded(870,35561
+
+traffic.cpp,1352
+Traffic_source::Traffic_source(24,598
+Traffic_source::~Traffic_source(62,1941
+int Traffic_source::set_trace_file(76,2361
+void Traffic_source::set_packet_generating_rate(148,4564
+void Traffic_source::set_time_start(157,4795
+void Traffic_source::set_packet_to_destination_rate(161,4874
+double Traffic_source::get_packet_to_destination_rate(185,5927
+void Traffic_source::set_OnOff(244,8085
+double Traffic_source::get_total_packet_injection_rate(256,8621
+bool Traffic_source::get_next_message(268,9062
+void Traffic_source::tick(302,10153
+unsigned int Traffic_source::get_destination_uniform(427,14626
+unsigned int Traffic_source::get_destination_transpose1(434,14863
+unsigned int Traffic_source::get_destination_transpose2(449,15321
+unsigned int Traffic_source::get_destination_hotspot(465,15737
+unsigned int Traffic_source::get_destination_customized(515,17478
+void Traffic_source::generate_a_packet(537,18301
+void Traffic_source::generate_a_packet(620,21562
+void Traffic_source::generate_packets(704,24689
+bool Traffic_source::can_send(713,25101
+bool Traffic_source::send(731,25623
+pConnector Traffic_source::get_receiver(777,27185
+Traffic_sink::Traffic_sink(783,27315
+bool Traffic_sink::can_receive(794,27585
+bool Traffic_sink::receive(801,27719
+void Traffic_sink::tick(829,28658
+bool Traffic_sink::consume_a_packet(846,29143
+
+port.cpp,791
+Port::~Port(12,406
+void Port::tick(17,543
+void Port::set_channel_buffer_size(22,757
+unsigned int Port::num_of_empty_buffer_slots(28,1021
+unsigned int Port::total_buffer_capacity(36,1375
+In_port::In_port(43,1616
+In_port::In_port(65,2322
+void In_port::set_routing_scheme(80,2845
+void In_port::set_routing_table(88,3169
+bool In_port::can_send(97,3579
+bool In_port::can_receive(105,3850
+bool In_port::send(111,4027
+bool In_port::receive(120,4253
+unsigned int In_port::get_can_accept(130,4489
+unsigned int In_port::get_total_acceptable(136,4677
+Out_port::Out_port(146,5002
+Out_port::Out_port(167,5787
+bool Out_port::can_send(183,6301
+bool Out_port::can_receive(189,6537
+bool Out_port::send(197,6764
+bool Out_port::receive(204,7004
+Direction Out_port::get_direction(208,7067
+
+util.cpp,392
+string rip_off_space_and_table(20,655
+void print_times(37,1123
+void print_statistics(52,1813
+void compile_energy_info(152,7631
+void print_parameters(183,9051
+void print_help(309,15233
+bool print_input_buffer_occupancy(468,22449
+bool print_output_buffer_occupancy(556,27228
+bool parse_options(649,32198
+int apply_config_file(1073,45547
+bool post_initialization_configure(1490,63231
+
+power.cpp,473
+Power_module::Power_module(17,529
+void Power_module::power_buffer_read(64,2618
+void Power_module::power_link_traversal(70,2804
+void Power_module::power_buffer_write(77,2995
+void Power_module::power_crossbar_trav(88,3364
+void Power_module::power_arbiter(106,4008
+double Power_module::power_arbiter_report(120,4423
+double Power_module::power_buffer_report(126,4528
+double Power_module::power_crossbar_report(133,4708
+double Power_module::power_link_report(139,4824
+
+repeater.cpp,400
+Repeater::Repeater(15,417
+Repeater::~Repeater(72,2589
+void Repeater::set_input_channel_buffer_size(86,3013
+void Repeater::set_input_channel_buffer_size(91,3208
+void Repeater::set_output_channel_buffer_size(97,3358
+pInput_channel Repeater::get_in_channel(103,3636
+pOutput_channel Repeater::get_out_channel(109,3809
+void Repeater::in_ports_tick(115,3987
+void Repeater::out_ports_tick(120,4147
+
+ion_power_beteta_mar2003/power/SIM_power_misc_internah.h,910
+#define _SIM_POWER_MISC_INTERNAL_H2,36
+#define MAX_SEL_LEVEL	8,185
+	int model;15,288
+	int encoding;16,301
+	u_int data_width;17,317
+	u_int grp_width;18,337
+	LIB_Type_max_uint n_switch;19,356
+	double e_switch;20,386
+	u_int bit_width;22,429
+	LIB_Type_max_uint bus_mask;23,448
+} SIM_power_bus_t;24,478
+	int model;27,518
+	u_int width;28,531
+	LIB_Type_max_uint n_anyreq;29,546
+	LIB_Type_max_uint n_chgreq;30,576
+	LIB_Type_max_uint n_grant;31,606
+	LIB_Type_max_uint n_enc[n_enc32,635
+	double e_anyreq;33,677
+	double e_chgreq;34,696
+	double e_grant;35,715
+	double e_enc[e_enc36,733
+} SIM_power_sel_t;37,764
+	int model;40,804
+	LIB_Type_max_uint n_switch;41,817
+	LIB_Type_max_uint n_keep_1;42,847
+	LIB_Type_max_uint n_keep_0;43,877
+	LIB_Type_max_uint n_clock;44,907
+	double e_switch;45,936
+	double e_keep_1;46,955
+	double e_keep_0;47,974
+	double e_clock;48,993
+} SIM_power_ff_t;49,1011
+
+ion_power_beteta_mar2003/power/SIM_power_misc.h,378
+#define _SIM_POWER_MISC_H2,27
+	RESULT_BUS 10,176
+	GENERIC_BUS,11,194
+	BUS_MAX_MODEL12,209
+} SIM_power_bus_model_t;13,225
+	GENERIC_SEL 16,269
+	SEL_MAX_MODEL17,288
+} SIM_power_sel_model_t;18,304
+	NEG_DFF 21,348
+	FF_MAX_MODEL22,405
+} SIM_power_ff_model_t;23,420
+	IDENT_ENC 26,463
+	TRANS_ENC,27,504
+	BUSINV_ENC,28,543
+	BUS_MAX_ENC29,586
+} SIM_power_bus_enc_t;30,600
+
+ion_power_beteta_mar2003/power/SIM_reg_power.h,288
+#define _SIM_REG_POWER_H2,26
+#define P_DATA_T	11,179
+	LIB_Type_max_uint row_addr;28,598
+	LIB_Type_max_uint col_addr;29,628
+	LIB_Type_max_uint tag_addr;30,658
+	LIB_Type_max_uint tag_line;31,688
+	u_int data_line_size;32,718
+	P_DATA_T data_line;33,742
+} SIM_reg_port_state_t;34,764
+
+ion_power_beteta_mar2003/power/SIM_router_power.h,33
+#define _SIM_ROUTER_POWER_H2,29
+
+ion_power_beteta_mar2003/power/SIM_port_alpha.h,2429
+#define _SIM_PORT_H5,162
+#define POWER_TEST8,205
+#define PARM_POWER_STATS	11,235
+#define PARM_read_port	19,409
+#define PARM_write_port	20,435
+#define PARM_n_regs	21,462
+#define PARM_reg_width	22,486
+#define PARM_ndwl	24,515
+#define PARM_ndbl	25,536
+#define PARM_nspd	26,557
+#define PARM_in_port	49,1304
+#define PARM_cache_in_port	50,1329
+#define PARM_mc_in_port	51,1359
+#define PARM_io_in_port	52,1387
+#define PARM_out_port	53,1415
+#define PARM_cache_out_port	54,1441
+#define PARM_mc_out_port	55,1472
+#define PARM_io_out_port	56,1500
+#define PARM_flit_width	58,1543
+#define PARM_v_channel	61,1608
+#define PARM_v_class	62,1635
+#define PARM_cache_class	63,1661
+#define PARM_mc_class	64,1689
+#define PARM_io_class	65,1715
+#define PARM_in_share_buf	67,1751
+#define PARM_out_share_buf	68,1780
+#define PARM_in_share_switch	69,1810
+#define PARM_out_share_switch	70,1842
+#define PARM_crossbar_model	73,1904
+#define PARM_crsbar_degree	74,1949
+#define PARM_connect_type	75,1979
+#define PARM_trans_type	76,2020
+#define PARM_crossbar_in_len	78,2097
+#define PARM_crossbar_out_len	79,2131
+#define PARM_in_buf	82,2200
+#define PARM_in_buf_set	83,2224
+#define PARM_in_buf_rport	84,2254
+#define PARM_cache_in_buf	86,2285
+#define PARM_cache_in_buf_set	87,2314
+#define PARM_cache_in_buf_rport	88,2349
+#define PARM_mc_in_buf	90,2386
+#define PARM_mc_in_buf_set	91,2413
+#define PARM_mc_in_buf_rport	92,2445
+#define PARM_io_in_buf	94,2479
+#define PARM_io_in_buf_set	95,2506
+#define PARM_io_in_buf_rport	96,2538
+#define PARM_out_buf	99,2604
+#define PARM_out_buf_set	100,2629
+#define PARM_out_buf_wport	101,2658
+#define PARM_central_buf	104,2723
+#define PARM_cbuf_set	105,2751
+#define PARM_cbuf_rport	106,2780
+#define PARM_cbuf_wport	107,2808
+#define PARM_cbuf_width	108,2836
+#define PARM_pipe_depth	109,2864
+#define PARM_wordline_model	112,2944
+#define PARM_bitline_model	113,2991
+#define PARM_mem_model	114,3030
+#define PARM_row_dec_model	115,3066
+#define PARM_row_dec_pre_model	116,3106
+#define PARM_col_dec_model	117,3151
+#define PARM_col_dec_pre_model	118,3192
+#define PARM_mux_model	119,3237
+#define PARM_outdrv_model	120,3275
+#define PARM_data_end	124,3420
+#define PARM_amp_model	125,3446
+#define PARM_bitline_pre_model	126,3483
+#define PARM_in_arb_model	132,3670
+#define PARM_in_arb_ff_model	133,3712
+#define PARM_out_arb_model	134,3750
+#define PARM_out_arb_ff_model	135,3793
+
+ion_power_beteta_mar2003/power/SIM_power_router.h,2742
+#define _SIM_POWER_ROUTER_H2,29
+	MATRIX_CROSSBAR 9,180
+	MULTREE_CROSSBAR,10,203
+	CROSSBAR_MAX_MODEL11,223
+} SIM_power_crossbar_model_t;12,244
+	RR_ARBITER 15,293
+	MATRIX_ARBITER,16,311
+	QUEUE_ARBITER,17,329
+	ARBITER_MAX_MODEL18,346
+} SIM_power_arbiter_model_t;19,366
+	TRANS_GATE,23,437
+	TRISTATE_GATE,24,486
+} SIM_power_connect_t;25,535
+	SIM_power_crossbar_t crossbar;28,579
+	SIM_power_array_t in_buf;29,612
+	SIM_power_array_t cache_in_buf;30,640
+	SIM_power_array_t mc_in_buf;31,674
+	SIM_power_array_t io_in_buf;32,705
+	SIM_power_array_t out_buf;33,736
+	SIM_power_array_t central_buf;34,765
+	SIM_power_crossbar_t in_cbuf_crsbar;35,798
+	SIM_power_crossbar_t out_cbuf_crsbar;36,837
+	SIM_power_arbiter_t in_arb;37,877
+	SIM_power_arbiter_t cache_in_arb;38,907
+	SIM_power_arbiter_t mc_in_arb;39,943
+	SIM_power_arbiter_t io_in_arb;40,976
+	SIM_power_arbiter_t out_arb;41,1009
+	SIM_power_ff_t cbuf_ff;43,1095
+} SIM_power_router_t;44,1121
+	u_int n_in;47,1164
+	u_int n_cache_in;48,1178
+	u_int n_mc_in;49,1198
+	u_int n_io_in;50,1215
+	u_int n_out;51,1232
+	u_int n_cache_out;52,1247
+	u_int n_mc_out;53,1268
+	u_int n_io_out;54,1286
+	u_int flit_width;55,1304
+	u_int n_v_channel;57,1359
+	u_int n_v_class;58,1380
+	u_int cache_class;59,1399
+	u_int mc_class;60,1420
+	u_int io_class;61,1438
+	int in_share_buf;62,1456
+	int out_share_buf;63,1525
+	int in_share_switch;64,1596
+	int out_share_switch;65,1668
+	int crossbar_model;67,1770
+	u_int degree;68,1792
+	int connect_type;69,1844
+	int trans_type;70,1864
+	double crossbar_in_len;71,1930
+	double crossbar_out_len;72,1956
+	int in_buf;74,2009
+	int cache_in_buf;75,2023
+	int mc_in_buf;76,2043
+	int io_in_buf;77,2060
+	int out_buf;78,2077
+	int central_buf;80,2143
+	SIM_power_array_info_t in_buf_info;81,2162
+	SIM_power_array_info_t cache_in_buf_info;82,2200
+	SIM_power_array_info_t mc_in_buf_info;83,2244
+	SIM_power_array_info_t io_in_buf_info;84,2285
+	SIM_power_array_info_t out_buf_info;85,2326
+	SIM_power_array_info_t central_buf_info;86,2365
+	u_int pipe_depth;87,2408
+	int cbuf_ff_model;89,2488
+	int in_arb_model;91,2536
+	int out_arb_model;92,2556
+	int in_arb_ff_model;93,2577
+	int out_arb_ff_model;94,2600
+	SIM_power_array_info_t in_arb_queue_info;95,2624
+	SIM_power_array_info_t cache_in_arb_queue_info;96,2668
+	SIM_power_array_info_t mc_in_arb_queue_info;97,2718
+	SIM_power_array_info_t io_in_arb_queue_info;98,2765
+	SIM_power_array_info_t out_arb_queue_info;99,2812
+	u_int n_total_in;101,2882
+	u_int n_total_out;102,2902
+	u_int in_n_switch;103,2923
+	u_int cache_n_switch;104,2944
+	u_int mc_n_switch;105,2968
+	u_int io_n_switch;106,2989
+	u_int n_switch_in;107,3010
+	u_int n_switch_out;108,3031
+} SIM_power_router_info_t;109,3053
+
+ion_power_beteta_mar2003/power/SIM_power_permu.h,2014
+#define _SIM_POWER_PERMU_H2,28
+	OMFLIP_PERMU 9,140
+	GRP_PERMU,10,160
+	PERMU_MAX_MODEL11,173
+} SIM_power_permu_model_t;12,191
+#define FIRST_STG	14,221
+#define SECOND_STG	15,245
+#define THIRD_STG	16,270
+#define FOURTH_STG	17,294
+#define ALL_PASS	18,319
+#define is_omega(19,342
+#define is_flip(20,370
+	u_int data_width;23,414
+	LIB_Type_max_uint n_chg_in;24,434
+	LIB_Type_max_uint n_chg_out;25,464
+	LIB_Type_max_uint n_chg_stg;26,495
+	LIB_Type_max_uint n_chg_int;27,526
+	LIB_Type_max_uint n_chg_pass;28,557
+	LIB_Type_max_uint n_chg_ctr;29,589
+	double e_chg_in;30,620
+	double e_chg_out;31,639
+	double e_chg_stg;32,659
+	double e_chg_int;33,679
+	double e_chg_pass;34,699
+	double e_chg_ctr;35,720
+	LIB_Type_max_uint in;37,763
+	LIB_Type_max_uint out;38,787
+	LIB_Type_max_uint stg[stg39,812
+	LIB_Type_max_uint inn[inn40,840
+	uint pass;41,868
+	LIB_Type_max_uint ctr[ctr42,881
+	LIB_Type_max_uint data_mask;44,933
+	LIB_Type_max_uint ctr_mask;45,964
+} SIM_power_omflip_t;46,994
+#define ZBIT	48,1019
+#define WBIT	49,1035
+#define N_ONEHOT	50,1051
+	u_int data_width;54,1149
+	LIB_Type_max_uint n_chg_in;55,1169
+	LIB_Type_max_uint n_chg_zin[n_chg_zin56,1199
+	LIB_Type_max_uint n_chg_lin[n_chg_lin57,1254
+	LIB_Type_max_uint n_chg_rin[n_chg_rin58,1312
+	LIB_Type_max_uint n_chg_oin;59,1371
+	LIB_Type_max_uint n_chg_out;60,1427
+	double e_chg_in;61,1458
+	double e_chg_zin[e_chg_zin62,1477
+	double e_chg_lin[e_chg_lin63,1500
+	double e_chg_rin[e_chg_rin64,1523
+	double e_chg_oin;65,1546
+	double e_chg_out;66,1566
+	LIB_Type_max_uint in;68,1609
+	LIB_Type_max_uint zin[zin69,1633
+	LIB_Type_max_uint win[win70,1661
+	u_int lin[lin72,1713
+	u_int rin[rin73,1736
+	LIB_Type_max_uint zoin;74,1759
+	LIB_Type_max_uint woin;75,1785
+	LIB_Type_max_uint out;76,1811
+	u_int n_stg;78,1860
+	LIB_Type_max_uint mask;79,1875
+} SIM_power_grp_t;80,1901
+	int model;83,1941
+		SIM_power_omflip_t omflip;85,1964
+		SIM_power_grp_t grp;86,1994
+	      } u;87,2018
+} SIM_power_permu_t;88,2031
+
+ion_power_beteta_mar2003/power/SIM_port_ibm.h,2430
+#define _SIM_PORT_H5,173
+#define POWER_TEST8,216
+#define PARM_POWER_STATS	11,246
+#define PARM_read_port	19,420
+#define PARM_write_port	20,446
+#define PARM_n_regs	21,473
+#define PARM_reg_width	22,497
+#define PARM_ndwl	24,526
+#define PARM_ndbl	25,547
+#define PARM_nspd	26,568
+#define PARM_in_port	49,1315
+#define PARM_cache_in_port	50,1340
+#define PARM_mc_in_port	51,1370
+#define PARM_io_in_port	52,1398
+#define PARM_out_port	53,1426
+#define PARM_cache_out_port	54,1452
+#define PARM_mc_out_port	55,1483
+#define PARM_io_out_port	56,1511
+#define PARM_flit_width	58,1555
+#define PARM_v_channel	61,1621
+#define PARM_v_class	62,1648
+#define PARM_cache_class	63,1673
+#define PARM_mc_class	64,1701
+#define PARM_io_class	65,1727
+#define PARM_in_share_buf	67,1763
+#define PARM_out_share_buf	68,1792
+#define PARM_in_share_switch	70,1832
+#define PARM_out_share_switch	71,1864
+#define PARM_crossbar_model	74,1926
+#define PARM_crsbar_degree	75,1968
+#define PARM_connect_type	76,1998
+#define PARM_trans_type	77,2039
+#define PARM_crossbar_in_len	78,2073
+#define PARM_crossbar_out_len	79,2105
+#define PARM_in_buf	82,2171
+#define PARM_in_buf_set	84,2219
+#define PARM_in_buf_rport	85,2249
+#define PARM_cache_in_buf	87,2280
+#define PARM_cache_in_buf_set	88,2309
+#define PARM_cache_in_buf_rport	89,2342
+#define PARM_mc_in_buf	91,2379
+#define PARM_mc_in_buf_set	92,2406
+#define PARM_mc_in_buf_rport	93,2436
+#define PARM_io_in_buf	95,2470
+#define PARM_io_in_buf_set	96,2497
+#define PARM_io_in_buf_rport	97,2527
+#define PARM_out_buf	100,2593
+#define PARM_out_buf_set	101,2618
+#define PARM_out_buf_wport	102,2647
+#define PARM_central_buf	105,2712
+#define PARM_cbuf_set	107,2768
+#define PARM_cbuf_rport	108,2797
+#define PARM_cbuf_wport	109,2825
+#define PARM_cbuf_width	110,2853
+#define PARM_pipe_depth	111,2881
+#define PARM_wordline_model	114,2961
+#define PARM_bitline_model	115,3008
+#define PARM_mem_model	116,3047
+#define PARM_row_dec_model	117,3083
+#define PARM_row_dec_pre_model	118,3123
+#define PARM_col_dec_model	119,3168
+#define PARM_col_dec_pre_model	120,3209
+#define PARM_mux_model	121,3254
+#define PARM_outdrv_model	122,3292
+#define PARM_data_end	126,3437
+#define PARM_amp_model	127,3463
+#define PARM_bitline_pre_model	128,3500
+#define PARM_in_arb_model	134,3687
+#define PARM_in_arb_ff_model	135,3729
+#define PARM_out_arb_model	136,3767
+#define PARM_out_arb_ff_model	137,3810
+
+ion_power_beteta_mar2003/power/SIM_power_router_internal.h,1048
+#define _SIM_POWER_ROUTER_INTERNAL_H2,38
+	int model;9,195
+	u_int n_in;10,208
+	u_int n_out;11,222
+	u_int data_width;12,237
+	u_int degree;13,257
+	int connect_type;14,309
+	int trans_type;15,329
+	LIB_Type_max_uint n_chg_in;16,395
+	LIB_Type_max_uint n_chg_int;17,425
+	LIB_Type_max_uint n_chg_out;18,456
+	LIB_Type_max_uint n_chg_ctr;19,487
+	double e_chg_in;20,518
+	double e_chg_int;21,537
+	double e_chg_out;22,557
+	double e_chg_ctr;23,577
+	u_int depth;25,621
+	LIB_Type_max_uint mask;26,672
+} SIM_power_crossbar_t;27,698
+	int model;31,797
+	u_int req_width;32,810
+	LIB_Type_max_uint n_chg_req;33,829
+	LIB_Type_max_uint n_chg_grant;34,860
+	LIB_Type_max_uint n_chg_carry;36,938
+	LIB_Type_max_uint n_chg_carry_in;37,971
+	LIB_Type_max_uint n_chg_mint;39,1047
+	double e_chg_req;40,1079
+	double e_chg_grant;41,1099
+	double e_chg_carry;42,1121
+	double e_chg_carry_in;43,1143
+	double e_chg_mint;44,1168
+	SIM_power_ff_t pri_ff;46,1216
+	SIM_power_array_t queue;48,1263
+	LIB_Type_max_uint mask;50,1314
+} SIM_power_arbiter_t;51,1340
+
+ion_power_beteta_mar2003/power/SIM_power.h,6828
+#define _SIM_POWER_H2,22
+#define	SIM_NO_MODEL	10,166
+#define MAX_ENERGY	12,192
+#define AVG_ENERGY	13,214
+#define MAX(16,251
+#define MIN(19,310
+#define NEXT_DEPTH(22,358
+#define BIGNUM	24,409
+#define BIGONE	25,430
+#define BIGNONE	26,469
+#define HAMM_MASK(27,510
+#define RISE 30,661
+#define FALL 31,677
+#define NCH 32,693
+#define PCH 33,709
+static double Vdd=35,727
+static double PARM_Freq=36,751
+#define CSCALE	44,956
+#define RSCALE	46,1069
+#define LSCALE	47,1132
+#define ASCALE	48,1195
+#define VSCALE	49,1254
+#define VTSCALE	50,1305
+#define SSCALE	52,1389
+#define MCSCALE	54,1492
+#define MCSCALE2	55,1566
+#define MCSCALE3	56,1640
+#define GEN_POWER_SCALE 57,1716
+#define CSCALE	59,1802
+#define RSCALE	61,1915
+#define LSCALE	62,1979
+#define ASCALE	63,2042
+#define VSCALE	64,2101
+#define VTSCALE	65,2153
+#define SSCALE	66,2216
+#define MCSCALE	68,2319
+#define MCSCALE2	69,2393
+#define MCSCALE3	70,2467
+#define GEN_POWER_SCALE 71,2543
+#define CSCALE	74,2676
+#define RSCALE	75,2741
+#define LSCALE	76,2805
+#define ASCALE	77,2868
+#define VSCALE	78,2927
+#define VTSCALE	79,2979
+#define SSCALE	80,3042
+#define MCSCALE	81,3100
+#define MCSCALE2	82,3174
+#define MCSCALE3	83,3248
+#define GEN_POWER_SCALE 84,3324
+#define CSCALE	86,3410
+#define RSCALE	87,3475
+#define LSCALE	88,3539
+#define ASCALE	89,3602
+#define VSCALE	90,3661
+#define VTSCALE	91,3712
+#define SSCALE	92,3777
+#define MCSCALE	93,3835
+#define MCSCALE2	94,3909
+#define MCSCALE3	95,3988
+#define GEN_POWER_SCALE 96,4064
+#define CSCALE	98,4125
+#define RSCALE	99,4190
+#define LSCALE	100,4254
+#define ASCALE	101,4317
+#define VSCALE	102,4376
+#define VTSCALE	103,4428
+#define SSCALE	104,4493
+#define MCSCALE	105,4551
+#define MCSCALE2	106,4622
+#define MCSCALE3	107,4698
+#define GEN_POWER_SCALE 108,4774
+#define CSCALE	110,4856
+#define RSCALE	111,4920
+#define LSCALE	112,4983
+#define ASCALE	113,5046
+#define VSCALE	114,5105
+#define VTSCALE	115,5156
+#define SSCALE	116,5221
+#define MCSCALE	117,5279
+#define MCSCALE2	118,5350
+#define MCSCALE3	119,5426
+#define GEN_POWER_SCALE 120,5502
+#define CSCALE	122,5609
+#define RSCALE	123,5669
+#define LSCALE	124,5728
+#define ASCALE	125,5788
+#define VSCALE	126,5847
+#define VTSCALE	127,5898
+#define SSCALE	128,5960
+#define MCSCALE	129,6017
+#define MCSCALE2	130,6088
+#define MCSCALE3	131,6164
+#define GEN_POWER_SCALE 132,6240
+#define CSCALE	134,6376
+#define RSCALE	135,6436
+#define LSCALE	136,6495
+#define ASCALE	137,6555
+#define VSCALE	138,6614
+#define VTSCALE	139,6665
+#define SSCALE	140,6727
+#define MCSCALE	141,6784
+#define MCSCALE2	142,6855
+#define MCSCALE3	143,6931
+#define GEN_POWER_SCALE 144,7007
+#define MSCALE	147,7136
+#define Cwordmetal 154,7308
+#define Cbitmetal 157,7407
+#define Cmetal 160,7505
+#define CM2metal 161,7543
+#define CM3metal 162,7582
+#define CCmetal 165,7672
+#define CCM2metal 166,7714
+#define CCM3metal 167,7759
+#define CC2metal 169,7856
+#define CC2M2metal 170,7899
+#define CC2M3metal 171,7945
+#define CC3metal 173,8043
+#define CC3M2metal 174,8086
+#define CC3M3metal 175,8132
+#define Leff 178,8190
+#define Lamda 180,8253
+#define Cpolywire	183,8304
+#define Rnchannelstatic	186,8386
+#define Rpchannelstatic	189,8462
+#define Rnchannelon	191,8506
+#define Rpchannelon	193,8545
+#define Rbitmetal	196,8628
+#define Rwordmetal	199,8720
+#define Period 206,8886
+#define krise	208,8944
+#define tsensedata	209,8978
+#define tsensetag	210,9017
+#define tfalldata	211,9055
+#define tfalltag	212,9091
+#define Vbitpre	213,9126
+#define Vt	214,9159
+#define Vbitsense	215,9189
+#define Powerfactor	217,9226
+#define EnergyFactor	218,9268
+#define SensePowerfactor3 220,9302
+#define SensePowerfactor2 221,9366
+#define SensePowerfactor 222,9446
+#define SenseEnergyFactor 223,9498
+#define Wdecdrivep	226,9612
+#define Wdecdriven	227,9648
+#define Wdec3to8n	228,9684
+#define Wdec3to8p	229,9719
+#define WdecNORn	230,9754
+#define WdecNORp	231,9787
+#define Wdecinvn	232,9821
+#define Wdecinvp	233,9854
+#define Wworddrivemax	235,9891
+#define Wmemcella	236,9931
+#define Wmemcellr	237,9965
+#define Wmemcellw	238,9999
+#define Wmemcellbscale	239,10033
+#define Wbitpreequ	240,10097
+#define Wbitmuxn	242,10135
+#define WsenseQ1to4	243,10169
+#define Wcompinvp1	244,10205
+#define Wcompinvn1	245,10241
+#define Wcompinvp2	246,10276
+#define Wcompinvn2	247,10312
+#define Wcompinvp3	248,10348
+#define Wcompinvn3	249,10384
+#define Wevalinvp	250,10420
+#define Wevalinvn	251,10455
+#define Wcompn	253,10492
+#define Wcompp	254,10525
+#define Wcomppreequ 255,10558
+#define Wmuxdrv12n	256,10599
+#define Wmuxdrv12p	257,10635
+#define WmuxdrvNANDn 258,10671
+#define WmuxdrvNANDp 259,10712
+#define WmuxdrvNORn	260,10753
+#define WmuxdrvNORp	261,10790
+#define Wmuxdrv3n	262,10827
+#define Wmuxdrv3p	263,10863
+#define Woutdrvseln	264,10899
+#define Woutdrvselp	265,10936
+#define Woutdrvnandn	266,10973
+#define Woutdrvnandp	267,11011
+#define Woutdrvnorn	268,11049
+#define Woutdrvnorp	269,11085
+#define Woutdrivern	270,11122
+#define Woutdriverp	271,11159
+#define Wbusdrvn	272,11196
+#define Wbusdrvp	273,11230
+#define Wcompcellpd2 275,11266
+#define Wcompdrivern 276,11306
+#define Wcompdriverp 277,11348
+#define Wcomparen2 278,11390
+#define Wcomparen1 279,11431
+#define Wmatchpchg 280,11472
+#define Wmatchinvn 281,11513
+#define Wmatchinvp 282,11554
+#define Wmatchnandn 283,11595
+#define Wmatchnandp 284,11636
+#define Wmatchnorn 285,11677
+#define Wmatchnorp 286,11718
+#define WSelORn 288,11761
+#define WSelORprequ 289,11802
+#define WSelPn 290,11843
+#define WSelPp 291,11884
+#define WSelEnn 292,11925
+#define WSelEnp 293,11965
+#define Wsenseextdrv1p 295,12008
+#define Wsenseextdrv1n 296,12047
+#define Wsenseextdrv2p 297,12086
+#define Wsenseextdrv2n 298,12126
+#define BitWidth	301,12203
+#define BitHeight	304,12275
+#define Cout	306,12312
+#define RatCellHeight 309,12384
+#define RatCellWidth 310,12426
+#define RatShiftRegWidth 311,12468
+#define RatNumShift 312,12511
+#define BitlineSpacing 313,12539
+#define WordlineSpacing 314,12580
+#define RegCellHeight 316,12623
+#define RegCellWidth 317,12665
+#define CamCellHeight 319,12709
+#define CamCellWidth 320,12751
+#define MatchlineSpacing 321,12793
+#define TaglineSpacing 322,12834
+#define CrsbarCellHeight 324,12877
+#define CrsbarCellWidth 325,12918
+#define POWER_SCALE 331,13143
+#define I_ADD 332,13223
+#define I_ADD32 333,13274
+#define I_MULT16 334,13329
+#define I_SHIFT 335,13378
+#define I_LOGIC 336,13427
+#define F_ADD 337,13476
+#define F_MULT 338,13527
+#define I_ADD_CLOCK 340,13580
+#define I_MULT_CLOCK 341,13623
+#define I_SHIFT_CLOCK 342,13666
+#define I_LOGIC_CLOCK 343,13709
+#define F_ADD_CLOCK 344,13752
+#define F_MULT_CLOCK 345,13795
+	N_GATE,350,13888
+	NP_GATE351,13898
+} SIM_power_trans_t;352,13908
+
+ion_power_beteta_mar2003/power/SIM_power_array_internal.h,3971
+#define _SIM_POWER_ARRAY_INTERNAL_H2,37
+#define SIM_ARRAY_READ	7,140
+#define SIM_ARRAY_WRITE	8,167
+#define SIM_ARRAY_RECOVER	10,197
+#define SIM_ARRAY_RW	13,246
+#define SIM_ARRAY_WO	15,289
+   int cache_size;20,382
+   int number_of_sets;21,402
+   int associativity;22,426
+   int block_size;23,449
+} time_parameter_type;24,469
+   double access_time,27,513
+   double access_time,cycle_time;27,513
+   int best_Ndwl,28,548
+   int best_Ndwl,best_Ndbl;28,548
+   int best_Nspd;29,577
+   int best_Ntwl,30,596
+   int best_Ntwl,best_Ntbl;30,596
+   int best_Ntspd;31,625
+   double decoder_delay_data,32,645
+   double decoder_delay_data,decoder_delay_tag;32,645
+   double dec_data_driver,33,694
+   double dec_data_driver,dec_data_3to8,33,694
+   double dec_data_driver,dec_data_3to8,dec_data_inv;33,694
+   double dec_tag_driver,34,749
+   double dec_tag_driver,dec_tag_3to8,34,749
+   double dec_tag_driver,dec_tag_3to8,dec_tag_inv;34,749
+   double wordline_delay_data,35,801
+   double wordline_delay_data,wordline_delay_tag;35,801
+   double bitline_delay_data,36,852
+   double bitline_delay_data,bitline_delay_tag;36,852
+   double sense_amp_delay_data,37,901
+   double sense_amp_delay_data,sense_amp_delay_tag;37,901
+   double senseext_driver_delay_data;38,954
+   double compare_part_delay;39,993
+   double drive_mux_delay;40,1024
+   double selb_delay;41,1052
+   double data_output_delay;42,1075
+   double drive_valid_delay;43,1105
+   double precharge_delay;44,1135
+} time_result_type;45,1163
+	int model;49,1206
+	u_int n_bits;50,1219
+	LIB_Type_max_uint n_chg_output;51,1235
+	LIB_Type_max_uint n_chg_addr;52,1269
+	LIB_Type_max_uint n_chg_l1;53,1301
+	double e_chg_output;54,1331
+	double e_chg_addr;55,1354
+	double e_chg_l1;56,1375
+	u_int n_in_1st;57,1394
+	u_int n_in_2nd;58,1412
+	u_int n_out_0th;59,1430
+	u_int n_out_1st;60,1449
+	LIB_Type_max_uint addr_mask;62,1492
+} SIM_power_dec_t;63,1523
+	int model;66,1563
+	int share_rw;67,1576
+	LIB_Type_max_uint n_read;68,1592
+	LIB_Type_max_uint n_write;69,1620
+	double e_read;70,1649
+	double e_write;71,1666
+} SIM_power_wordline_t;72,1684
+	int model;75,1729
+	int share_rw;76,1742
+	u_int end;77,1758
+	LIB_Type_max_uint n_col_write;78,1771
+	LIB_Type_max_uint n_col_read;79,1804
+	LIB_Type_max_uint n_col_sel;80,1836
+	double e_col_write;81,1867
+	double e_col_read;82,1889
+	double e_col_sel;83,1910
+} SIM_power_bitline_t;84,1930
+	int model;87,1974
+	LIB_Type_max_uint n_access;88,1987
+	double e_access;89,2017
+} SIM_power_amp_t;90,2036
+	int model;93,2076
+	u_int n_bits;94,2089
+	u_int assoc;95,2105
+	LIB_Type_max_uint n_access;96,2120
+	LIB_Type_max_uint n_match;97,2150
+	LIB_Type_max_uint n_mismatch;98,2179
+	LIB_Type_max_uint n_miss;99,2211
+	LIB_Type_max_uint n_bit_match;100,2239
+	LIB_Type_max_uint n_bit_mismatch;101,2272
+	LIB_Type_max_uint n_chg_addr;102,2308
+	double e_access;103,2340
+	double e_match;104,2359
+	double e_mismatch;105,2377
+	double e_miss;106,2398
+	double e_bit_match;107,2415
+	double e_bit_mismatch;108,2437
+	double e_chg_addr;109,2462
+	LIB_Type_max_uint comp_mask;111,2507
+} SIM_power_comp_t;112,2538
+	int model;115,2579
+	u_int end;116,2592
+	LIB_Type_max_uint n_switch;117,2605
+	double e_switch;118,2635
+} SIM_power_mem_t;119,2654
+	int model;122,2694
+	u_int assoc;123,2707
+	LIB_Type_max_uint n_mismatch;124,2722
+	LIB_Type_max_uint n_chg_addr;125,2754
+	double e_mismatch;126,2786
+	double e_chg_addr;127,2807
+} SIM_power_mux_t;128,2828
+	int model;131,2868
+	u_int item_width;132,2881
+	LIB_Type_max_uint n_select;133,2901
+	LIB_Type_max_uint n_chg_data;134,2931
+	LIB_Type_max_uint n_out_1;135,2963
+	LIB_Type_max_uint n_out_0;136,2992
+	double e_select;137,3021
+	double e_chg_data;138,3040
+	double e_out_1;139,3061
+	double e_out_0;140,3079
+	LIB_Type_max_uint out_mask;142,3121
+} SIM_power_out_t;143,3151
+	int model;146,3191
+	LIB_Type_max_uint n_charge;147,3204
+	double e_charge;148,3234
+} SIM_power_arr_pre_t;149,3253
+
+ion_power_beteta_mar2003/power/SIM_power_array.h,4344
+#define _SIM_POWER_ARRAY_H2,28
+#define SIM_ARRAY_NO_MODEL	10,249
+	GENERIC_DEC 19,431
+	DEC_MAX_MODEL20,450
+} SIM_power_dec_model_t;21,466
+	GENERIC_MUX 30,648
+	MUX_MAX_MODEL31,667
+} SIM_power_mux_model_t;32,683
+	GENERIC_AMP 41,869
+	AMP_MAX_MODEL42,888
+} SIM_power_amp_model_t;43,904
+	CACHE_RW_WORDLINE 57,1427
+	CACHE_WO_WORDLINE,58,1452
+	CAM_RW_WORDLINE,59,1473
+	CAM_WO_WORDLINE,60,1492
+	WORDLINE_MAX_MODEL61,1511
+} SIM_power_wordline_model_t;62,1532
+	RW_BITLINE 73,1875
+	WO_BITLINE,74,1893
+	BITLINE_MAX_MODEL75,1907
+} SIM_power_bitline_model_t;76,1927
+	SINGLE_BITLINE 84,2075
+	EQU_BITLINE,85,2097
+	SINGLE_OTHER,86,2112
+	PRE_MAX_MODEL87,2128
+} SIM_power_pre_model_t;88,2144
+	NORMAL_MEM 104,2829
+	CAM_TAG_RW_MEM,105,2847
+	CAM_TAG_WO_MEM,106,2865
+	CAM_DATA_MEM,107,2883
+	CAM_ATTACH_MEM,108,2899
+	MEM_MAX_MODEL109,2917
+} SIM_power_mem_model_t;110,2933
+	CACHE_COMP 120,3198
+	CAM_COMP,121,3216
+	COMP_MAX_MODEL122,3228
+} SIM_power_comp_model_t;123,3245
+	CACHE_OUTDRV 135,3641
+	CAM_OUTDRV,136,3661
+	REG_OUTDRV,137,3675
+	OUTDRV_MAX_MODEL138,3689
+} SIM_power_outdrv_model_t;139,3708
+	SIM_power_dec_t row_dec;142,3757
+	SIM_power_dec_t col_dec;143,3784
+	SIM_power_wordline_t data_wordline;144,3811
+	SIM_power_wordline_t tag_wordline;145,3849
+	SIM_power_bitline_t data_bitline;146,3886
+	SIM_power_bitline_t tag_bitline;147,3922
+	SIM_power_mem_t data_mem;148,3957
+	SIM_power_mem_t tag_mem;150,4018
+	SIM_power_mem_t tag_attach_mem;152,4135
+	SIM_power_amp_t data_amp;153,4169
+	SIM_power_amp_t tag_amp;154,4197
+	SIM_power_comp_t comp;155,4224
+	SIM_power_mux_t mux;156,4249
+	SIM_power_out_t outdrv;157,4272
+	SIM_power_arr_pre_t row_dec_pre;158,4298
+	SIM_power_arr_pre_t col_dec_pre;159,4333
+	SIM_power_arr_pre_t data_bitline_pre;160,4368
+	SIM_power_arr_pre_t tag_bitline_pre;161,4408
+	SIM_power_arr_pre_t data_colsel_pre;162,4447
+	SIM_power_arr_pre_t tag_colsel_pre;163,4486
+	SIM_power_arr_pre_t comp_pre;164,4524
+} SIM_power_array_t;165,4556
+	int share_rw;169,4652
+	u_int read_ports;170,4668
+	u_int write_ports;171,4688
+	u_int n_set;172,4709
+	u_int blk_bits;173,4724
+	u_int assoc;174,4742
+	int row_dec_model;175,4757
+	u_int data_width;177,4820
+	int col_dec_model;178,4840
+	int mux_model;179,4861
+	int outdrv_model;180,4878
+	u_int tag_addr_width;182,4939
+	u_int tag_line_width;183,4963
+	int comp_model;184,4987
+	u_int data_ndwl;186,5043
+	u_int data_ndbl;187,5062
+	u_int data_nspd;188,5081
+	u_int data_n_share_amp;189,5100
+	u_int data_end;190,5126
+	int data_wordline_model;191,5144
+	int data_bitline_model;192,5171
+	int data_amp_model;193,5197
+	int data_mem_model;194,5219
+	u_int tag_ndwl;196,5278
+	u_int tag_ndbl;197,5296
+	u_int tag_nspd;198,5314
+	u_int tag_n_share_amp;199,5332
+	u_int tag_end;200,5357
+	int tag_wordline_model;201,5374
+	int tag_bitline_model;202,5400
+	int tag_amp_model;203,5425
+	int tag_mem_model;204,5446
+	int tag_attach_mem_model;205,5467
+	int row_dec_pre_model;207,5530
+	int col_dec_pre_model;208,5555
+	int data_bitline_pre_model;209,5580
+	int tag_bitline_pre_model;210,5610
+	int data_colsel_pre_model;211,5639
+	int tag_colsel_pre_model;212,5668
+	int comp_pre_model;213,5696
+	u_int n_item;215,5748
+	u_int eff_data_cols;216,5793
+	u_int eff_tag_cols;217,5863
+	u_int use_bit_width;219,5975
+	u_int valid_bit_width;220,5998
+	int write_policy;221,6023
+	u_int (*get_entry_valid_bit)get_entry_valid_bit225,6242
+	u_int (*get_entry_dirty_bit)get_entry_dirty_bit226,6283
+	u_int (*get_set_use_bit)get_set_use_bit227,6324
+	LIB_Type_max_uint (*get_entry_tag)get_entry_tag228,6366
+	LIB_Type_max_uint (*get_set_tag)get_set_tag229,6413
+	double data_arr_width;231,6517
+	double tag_arr_width;232,6542
+	double data_arr_height;233,6566
+	double tag_arr_height;234,6592
+} SIM_power_array_info_t;235,6617
+	LIB_Type_max_uint row_addr;261,7571
+	LIB_Type_max_uint col_addr;262,7601
+	LIB_Type_max_uint tag_addr;263,7631
+	LIB_Type_max_uint tag_line;264,7661
+	u_int data_line_size;265,7691
+	char data_line[data_line266,7715
+} SIM_array_port_state_t;267,7736
+	void *entry;entry293,8878
+	void *entry_set;entry_set294,8893
+	int write_flag;295,8912
+	int write_back_flag;296,8930
+	u_int valid_bak;297,8953
+	u_int dirty_bak;298,8972
+	LIB_Type_max_uint tag_bak;299,8991
+	u_int use_bak[use_bak300,9020
+} SIM_array_set_state_t;301,9040
+
+ion_power_beteta_mar2003/power/SIM_power_test.h,3733
+#define	_SIM_POWER_TEST_H3,88
+#define __INSTANCE__ 7,140
+#define GLOBDEF(8,176
+#define GLOB(9,222
+#define FUNC(10,261
+#define FUNCPTR(11,316
+#define PARM(12,360
+#undef PARM_AF14,390
+#undef PARM_MAXN15,406
+#undef PARM_MAXSUBARRAYS16,424
+#undef PARM_MAXSPD17,450
+#undef PARM_VTHSENSEEXTDRV18,470
+#undef PARM_VTHOUTDRNOR19,498
+#undef PARM_res_fpalu20,523
+#undef PARM_VTHCOMPINV21,546
+#undef PARM_MD_NUM_IREGS22,570
+#undef PARM_die_length23,596
+#undef PARM_BITOUT24,620
+#undef PARM_Cndiffside25,640
+#undef PARM_ruu_decode_width26,664
+#undef PARM_ruu_issue_width27,694
+#undef PARM_amp_Idsat28,723
+#undef PARM_AF_TYPE29,746
+#undef PARM_VSINV30,767
+#undef PARM_Cpdiffovlp31,786
+#undef PARM_data_width32,810
+#undef PARM_Cgatepass33,834
+#undef PARM_Cpdiffarea34,857
+#undef PARM_GEN_POWER_FACTOR35,881
+#undef PARM_res_memport36,911
+#undef PARM_VTHNAND60x9037,936
+#undef PARM_Cpdiffside38,962
+#undef PARM_Cpoxideovlp39,986
+#undef PARM_opcode_length40,1011
+#undef PARM_MD_NUM_FREGS41,1038
+#undef PARM_FUDGEFACTOR42,1064
+#undef PARM_ruu_commit_width43,1089
+#undef PARM_Cndiffovlp44,1119
+#undef PARM_VTHOUTDRIVE45,1143
+#undef PARM_Cndiffarea46,1168
+#undef PARM_VTHMUXDRV147,1192
+#undef PARM_inst_length48,1216
+#undef PARM_VTHMUXDRV249,1241
+#undef PARM_NORMALIZE_SCALE50,1265
+#undef PARM_ras_size51,1294
+#undef PARM_VTHMUXDRV352,1316
+#undef PARM_ADDRESS_BITS53,1340
+#undef PARM_RUU_size54,1366
+#undef PARM_Cgate55,1388
+#undef PARM_VTHNOR12x4x156,1407
+#undef PARM_VTHNOR12x4x257,1433
+#undef PARM_VTHOUTDRINV58,1459
+#undef PARM_VTHNOR12x4x359,1484
+#undef PARM_VTHEVALINV60,1510
+#undef PARM_crossover_scaling61,1534
+#undef PARM_VTHNOR12x4x462,1565
+#undef PARM_turnoff_factor63,1591
+#undef PARM_res_ialu64,1619
+#undef PARM_Cnoxideovlp65,1641
+#undef PARM_VTHOUTDRNAND66,1666
+#undef PARM_VTHINV100x6067,1692
+#undef PARM_LSQ_size68,1718
+#define PARM_AF 71,1759
+#define PARM_MAXN 74,1832
+#define PARM_MAXSUBARRAYS 77,1906
+#define PARM_MAXSPD 80,1990
+#define PARM_VTHSENSEEXTDRV 83,2070
+#define PARM_VTHOUTDRNOR 86,2174
+#define PARM_res_fpalu 89,2270
+#define PARM_VTHCOMPINV 92,2352
+#define PARM_MD_NUM_IREGS 95,2449
+#define PARM_die_length 98,2538
+#define PARM_BITOUT 101,2629
+#define PARM_Cndiffside 104,2706
+#define PARM_ruu_decode_width 107,2807
+#define PARM_ruu_issue_width 110,2908
+#define PARM_amp_Idsat 113,3001
+#define PARM_AF_TYPE 116,3091
+#define PARM_VSINV 119,3164
+#define PARM_Cpdiffovlp 122,3249
+#define PARM_Cgatepass 125,3343
+#define PARM_Cpdiffarea 128,3436
+#define PARM_GEN_POWER_FACTOR 131,3537
+#define PARM_res_memport 134,3645
+#define PARM_VTHNAND60x90 137,3733
+#define PARM_Cpdiffside 140,3832
+#define PARM_Cpoxideovlp 143,3928
+#define PARM_opcode_length 146,4028
+#define PARM_MD_NUM_FREGS 149,4120
+#define PARM_FUDGEFACTOR 152,4210
+#define PARM_ruu_commit_width 155,4313
+#define PARM_Cndiffovlp 158,4409
+#define PARM_VTHOUTDRIVE 161,4505
+#define PARM_Cndiffarea 164,4602
+#define PARM_VTHMUXDRV1 167,4697
+#define PARM_inst_length 170,4793
+#define PARM_VTHMUXDRV2 173,4880
+#define PARM_NORMALIZE_SCALE 176,4980
+#define PARM_ras_size 179,5083
+#define PARM_VTHMUXDRV3 182,5163
+#define PARM_ADDRESS_BITS 185,5260
+#define PARM_RUU_size 188,5347
+#define PARM_Cgate 191,5423
+#define PARM_VTHNOR12x4x1 194,5510
+#define PARM_VTHNOR12x4x2 197,5611
+#define PARM_VTHOUTDRINV 200,5711
+#define PARM_VTHNOR12x4x3 203,5810
+#define PARM_VTHEVALINV 206,5909
+#define PARM_crossover_scaling 209,6011
+#define PARM_VTHNOR12x4x4 212,6122
+#define PARM_turnoff_factor 215,6225
+#define PARM_res_ialu 218,6326
+#define PARM_Cnoxideovlp 221,6407
+#define PARM_VTHOUTDRNAND 224,6506
+#define PARM_VTHINV100x60 227,6607
+#define PARM_LSQ_size 230,6704
+
+ion_power_beteta_mar2003/power/SIM_port.h,2428
+#define _SIM_PORT_H5,173
+#define POWER_TEST8,216
+#define PARM_POWER_STATS	11,246
+#define PARM_read_port	19,420
+#define PARM_write_port	20,446
+#define PARM_n_regs	21,473
+#define PARM_reg_width	22,497
+#define PARM_ndwl	24,526
+#define PARM_ndbl	25,547
+#define PARM_nspd	26,568
+#define PARM_in_port	49,1315
+#define PARM_cache_in_port	50,1371
+#define PARM_mc_in_port	51,1430
+#define PARM_io_in_port	52,1499
+#define PARM_out_port	53,1561
+#define PARM_cache_out_port	54,1619
+#define PARM_mc_out_port	55,1680
+#define PARM_io_out_port	56,1750
+#define PARM_flit_width	57,1813
+#define PARM_v_channel	60,1904
+#define PARM_v_class	61,1972
+#define PARM_cache_class	62,2030
+#define PARM_mc_class	63,2096
+#define PARM_io_class	64,2172
+#define PARM_in_share_buf	66,2251
+#define PARM_out_share_buf	67,2338
+#define PARM_in_share_switch	69,2437
+#define PARM_out_share_switch	70,2529
+#define PARM_crossbar_model	73,2653
+#define PARM_crsbar_degree	74,2724
+#define PARM_connect_type	75,2781
+#define PARM_trans_type	76,2852
+#define PARM_crossbar_in_len	77,2925
+#define PARM_crossbar_out_len	78,3001
+#define PARM_in_buf	81,3112
+#define PARM_in_buf_set	82,3161
+#define PARM_in_buf_rport	83,3206
+#define PARM_cache_in_buf	85,3259
+#define PARM_cache_in_buf_set	86,3288
+#define PARM_cache_in_buf_rport	87,3322
+#define PARM_mc_in_buf	89,3359
+#define PARM_mc_in_buf_set	90,3386
+#define PARM_mc_in_buf_rport	91,3416
+#define PARM_io_in_buf	93,3450
+#define PARM_io_in_buf_set	94,3477
+#define PARM_io_in_buf_rport	95,3507
+#define PARM_out_buf	98,3573
+#define PARM_out_buf_set	99,3598
+#define PARM_out_buf_wport	100,3626
+#define PARM_central_buf	103,3691
+#define PARM_cbuf_set	104,3746
+#define PARM_cbuf_rport	105,3791
+#define PARM_cbuf_wport	106,3841
+#define PARM_cbuf_width	107,3892
+#define PARM_pipe_depth	108,3948
+#define PARM_wordline_model	111,4045
+#define PARM_bitline_model	112,4092
+#define PARM_mem_model	113,4131
+#define PARM_row_dec_model	114,4167
+#define PARM_row_dec_pre_model	115,4207
+#define PARM_col_dec_model	116,4252
+#define PARM_col_dec_pre_model	117,4293
+#define PARM_mux_model	118,4338
+#define PARM_outdrv_model	119,4376
+#define PARM_data_end	123,4521
+#define PARM_amp_model	124,4547
+#define PARM_bitline_pre_model	125,4584
+#define PARM_in_arb_model	131,4771
+#define PARM_in_arb_ff_model	132,4849
+#define PARM_out_arb_model	133,4934
+#define PARM_out_arb_ff_model	134,5014
+
+ion_power_beteta_mar2003/power/SIM_power_ALU.h,1481
+#define _SIM_POWER_ALU_H2,26
+#define WaluNOTp	8,149
+#define WaluNOTn	9,179
+#define Walu2NANDp	10,209
+#define Walu2NANDn	11,241
+#define Walu3NANDp	12,273
+#define Walu3NANDn	13,305
+#define Walu4NANDp	14,337
+#define Walu4NANDn	15,369
+#define Walu2NORp	16,401
+#define Walu2NORn	17,432
+#define Walu3NORp	18,463
+#define Walu3NORn	19,494
+#define Walu4NORp	20,525
+#define Walu4NORn	21,556
+#define WaluXORp	22,587
+#define WaluXORn	23,617
+#define WaluPASSp	24,647
+#define WaluPASSn	25,678
+	PLX_ALU 28,727
+	ALU_MAX_MODEL29,742
+} SIM_power_ALU_model_t;30,758
+enum { PLX_CTR,33,808
+enum { PLX_CTR, PLX_IMM,33,808
+enum { PLX_CTR, PLX_IMM, PLX_LOGIC,33,808
+enum { PLX_CTR, PLX_IMM, PLX_LOGIC, PLX_SIGN,33,808
+enum { PLX_CTR, PLX_IMM, PLX_LOGIC, PLX_SIGN, PLX_SHIFT,33,808
+enum { PLX_CTR, PLX_IMM, PLX_LOGIC, PLX_SIGN, PLX_SHIFT, PLX_2COM,33,808
+enum { PLX_CTR, PLX_IMM, PLX_LOGIC, PLX_SIGN, PLX_SHIFT, PLX_2COM, PLX_ADD,33,808
+enum { PLX_CTR, PLX_IMM, PLX_LOGIC, PLX_SIGN, PLX_SHIFT, PLX_2COM, PLX_ADD, PLX_SUBW,33,808
+       PLX_SAT,34,895
+       PLX_SAT, PLX_AVG,34,895
+       PLX_SAT, PLX_AVG, PLX_OUT,34,895
+       PLX_SAT, PLX_AVG, PLX_OUT, PLX_BLK 34,895
+	int model;37,961
+	u_int data_width;38,974
+	LIB_Type_max_uint n_chg_blk[n_chg_blk39,994
+	double e_blk[e_blk40,1034
+	LIB_Type_max_uint a_d1;42,1073
+	LIB_Type_max_uint a_d2;43,1099
+	LIB_Type_max_uint l_d1;44,1125
+	LIB_Type_max_uint l_d2;45,1151
+	u_int type;46,1177
+} SIM_power_ALU_t;47,1191
+
+ion_power_beteta_mar2003/library/library_LIB/LIB_defines.h,92
+#define _LIB_DEFINES_H2,24
+#define LIB_Type_max_uint	6,76
+#define LIB_Type_max_int	7,113
